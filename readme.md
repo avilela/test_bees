@@ -8,7 +8,7 @@
 
 #### How to setup
 
-1. If you prefer you can create a python virtual environment(optional):
+1. If you prefer you can create a python virtual environment(recommended):
 
 		 pip install virtualenv
 		 python3 -m venv .venv
