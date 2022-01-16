@@ -1,0 +1,4 @@
+behave==1.2.6
+ipdb==0.13.9
+page_objects==1.1.0
+selenium==4.1.0
