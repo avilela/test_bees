@@ -26,7 +26,9 @@
 #### How to execute?
 3. On data_test.py file, created to facilitate maintenance, you can change the username, password, email_to, or what you want.
 	You also can use below command to select a new email to, by default destination and delivery emails are the same.
+	
 		behave -D email_to=email@email.com
+		
 4. To execute all features by default, on root folder of the project just type:
 	A) To use Chrome:
 		behave
