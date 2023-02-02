@@ -229,15 +229,15 @@ Feature: Testes das APIs /Deposits | /Items | /Inventories
       | CT    | registro   | payload                 | endpoint            | campoRetirado |
       | CT052 | items      | postItemsCompleto       | endpointItems       | name          |
       | CT053 | items      | postItemsCompleto       | endpointItems       | height        |
-      | CT053 | items      | postItemsCompleto       | endpointItems       | weight        |
-      | CT053 | items      | postItemsCompleto       | endpointItems       | width         |
+      | CT054 | items      | postItemsCompleto       | endpointItems       | weight        |
+      | CT055 | items      | postItemsCompleto       | endpointItems       | width         |
       | CT033 | inventario | postInventoriesCompleto | endpointInventories | item_id       |
       | CT034 | inventario | postInventoriesCompleto | endpointInventories | deposit_id    |
       | CT035 | inventario | postInventoriesCompleto | endpointInventories | item_count    |
 
 
   @AlteracaoPATCHcomFaltaDeCamposObrigatorios
-  Scenario Outline: "<CT>" alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado
+  Scenario Outline: "<CT>" alteracao PATCH com a falta de campos obrigatorios  - HTTP 400 esperado
     Given que eu tenha um registro "<registro>" criado
     Given que seja definido o payload "<payload>", aleatorizando os campos ja colocados "RandomNum" e retirando o campo "<campoRetirado>"
     Given que seja definido o endpoint como "<endpoint>" com parametro de id valido
@@ -328,9 +328,9 @@ Feature: Testes das APIs /Deposits | /Items | /Inventories
     Then espero receber um response code "200"
     Examples:
       | CT    | registro   | endpoint            |
-      | CT017 | deposito   | endpointDeposits    |
-      | CT037 | inventario | endpointInventories |
-      | CT057 | items      | endpointItems       |
+      | CT016 | deposito   | endpointDeposits    |
+      | CT036 | inventario | endpointInventories |
+      | CT056 | items      | endpointItems       |
 
 
   @ExclusaoComIdInvalido
