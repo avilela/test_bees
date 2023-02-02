@@ -1,39 +1,28 @@
-# Test Manual/Automation QA - BEES SAAS
+# Desafio AbinBev
 
-### Fork this repo and follow the instructions bellow for the test 
-<BR>
+## Projeto desenvolvido em JAVA para testar os requisitos solicitados no desafio de automação da Ambev.
 
-### Business Rules
+### Casos de teste
 
-<br>
+- Os casos de teste cobertos na automação podem ser acessados no diretorio: .../AmbevDesafio/CasosDeTeste 
 
-We developed a application that will help us to manage our inventory, deposits and items. Feel free to register your account and start using our application.
-Take your time to play around on the application's UI and API to get familiar with the system.
+### Features e tags
 
-For this test you will have to create a test automation project or manual tests cases, try to test as
-many scenarios as possible.
+- '@TesteCompleto' - executa todos os testes do projeto
+- [x] APIs '@TesteApis'
+- [x] Funcional WEB '@TesteWeb'
+
+### Preparação de maquina para execução:
+
+#### Como pré condição para execução do projeto, serão necessarias as instalações dos softwares abaixo, com configuração de variaveis de sistema:
+
+- Maven 3.8.4, link de apoio: https://dicasdejava.com.br/como-instalar-o-maven-no-windows/
+- java JDK 11, link de apoio: https://techexpert.tips/pt-br/windows-pt-br/instalar-java-jdk-no-windows/
+- Atualmente o script esta executando no Google Chrome 109, porem no diretorio ../AmbevDesafio/drivers estão as versões 103 e 110, caso precise trocar de chromeDriver para adequar a sua maquina, troque o arquivo "chromedriver.exe"
 
 
-<br>
-Links:
+### Instruções de execução:
 
-* Applicattion link - https://test-bees.herokuapp.com
-* API Docs - https://test-bees.herokuapp.com/api-docs/index.html 
-
-<BR>
-
-### Technical Requirements for Automation
-- Test both UI and API 
-- Use page object pattern or relative patterns of your preference.
-- Use BDD for any scenario you want to do
-- You can choose any programming language, we recommend to you use Python 3.6+,  *BUT IT'S UP TO YOU*
-- Please follow code style for your choose language (example: PEP's for python).
-- Describe how to run your code in README.MD
-- Please generate a report of your tests results
-
-### Technical Requirements for Manual
-- Test both UI and API
-- Documented all tests cases you created
-- For api tests you can use any framework you want, but we recommend to use Postman
-- Generate a report with evidences of the tests results
-  
+- Abrir a aplicação pela IDE preferida, entrar na classe ...test/java/runners/RunTest.java, trocar a tag para o teste desejado;
+- Abrir o CMD na raiz do projeto (/AmbevDesafio) onde o arquivo pom.xml é visivel, e executar a linha de comando a seguir, trocando a tag conforme o teste desejado: mvn test -Dtest=RunTest -Dcucumber.options="--tags @TesteCompleto"
+- Os relatorios estão sendo gerados no diretorio: .../WorkspaceDesafio/AmbevDesafio/target/cucumber-reports

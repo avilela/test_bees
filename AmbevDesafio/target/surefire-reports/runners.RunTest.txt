@@ -1,0 +1,281 @@
+-------------------------------------------------------------------------------
+Test set: runners.RunTest
+-------------------------------------------------------------------------------
+Tests run: 83, Failures: 39, Errors: 0, Skipped: 0, Time elapsed: 448.512 sec <<< FAILURE!
+Criacao de um deposito com todos os campos preenchidos - HTTP 200 esperado(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 3.076 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 200; recebido da API: 201; expected:<20[0]> but was:<20[1]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "200"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:11)
+
+Criacao de um inventario com todos os campos preenchidos - HTTP 200 esperado(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 3.386 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 200; recebido da API: 201; expected:<20[0]> but was:<20[1]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "200"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:28)
+
+Criacao de um item com todos os campos preenchidos - HTTP 200 esperado(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 0.866 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 200; recebido da API: 201; expected:<20[0]> but was:<20[1]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "200"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:44)
+
+"CT052" alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 1.663 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:<[4]00> but was:<[2]00>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+
+"CT053" alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado #1(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 1.751 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:<[4]00> but was:<[2]00>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+
+"CT053" alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado #2(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 1.616 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:<[4]00> but was:<[2]00>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+
+"CT053" alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado #3(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 1.583 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:<[4]00> but was:<[2]00>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+
+"CT033" alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 4.998 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:<[4]00> but was:<[2]00>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+
+"CT034" alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 5.412 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:<[4]00> but was:<[2]00>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+
+"CT035" alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 4.876 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:<[4]00> but was:<[2]00>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+
+"CT047" alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 1.654 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:<[4]00> but was:<[2]00>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+
+"CT048" alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 1.653 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:<[4]00> but was:<[2]00>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+
+"CT049" alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 1.652 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:<[4]00> but was:<[2]00>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+
+"CT050" alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 1.764 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:<[4]00> but was:<[2]00>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+
+"CT029" alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 4.976 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:<[4]00> but was:<[2]00>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+
+"CT030" alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 4.952 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:<[4]00> but was:<[2]00>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+
+"CT031" alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 5.192 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:<[4]00> but was:<[2]00>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+
+"CT002" Retirada de campos obrigatorios do payload(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 0.827 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:<[400]> but was:<[201]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+
+"CT003" Retirada de campos obrigatorios do payload(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 0.882 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:<[400]> but was:<[201]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+
+"CT004" Retirada de campos obrigatorios do payload(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 0.924 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:<[400]> but was:<[201]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+
+"CT005" Retirada de campos obrigatorios do payload(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 0.756 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:<[400]> but was:<[201]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+
+"CT006" Retirada de campos obrigatorios do payload(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 0.798 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:<[400]> but was:<[201]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+
+"CT039" Retirada de campos obrigatorios do payload(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 0.862 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:<[400]> but was:<[201]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+
+"CT040" Retirada de campos obrigatorios do payload(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 0.82 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:<[400]> but was:<[201]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+
+"CT041" Retirada de campos obrigatorios do payload(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 0.816 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:<[400]> but was:<[201]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+
+"CT042" Retirada de campos obrigatorios do payload(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 0.877 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:<[400]> but was:<[201]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+
+"CT019" Retirada de campos obrigatorios do payload(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 2.532 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 422; expected:<4[00]> but was:<4[22]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+
+"CT020" Retirada de campos obrigatorios do payload(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 2.505 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 422; expected:<4[00]> but was:<4[22]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+
+"CT021" Retirada de campos obrigatorios do payload(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 2.446 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:<[400]> but was:<[201]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+
+"CT022" Criacao de registros com tipagem incorreta de campos(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 0.804 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 422; expected:<4[00]> but was:<4[22]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:313)
+
+"CT023" Criacao de registros com tipagem incorreta de campos(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 0.828 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 422; expected:<4[00]> but was:<4[22]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:313)
+
+"CT024" Criacao de registros com tipagem incorreta de campos(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 0.851 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 422; expected:<4[00]> but was:<4[22]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "400"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:313)
+
+"CT017" Exclusao de registro especifico que esteja criado - HTTP 200 esperado(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 1.678 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 200; recebido da API: 204; expected:<20[0]> but was:<20[4]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "200"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:328)
+
+"CT037" Exclusao de registro especifico que esteja criado - HTTP 200 esperado(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 3.446 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 200; recebido da API: 204; expected:<20[0]> but was:<20[4]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "200"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:328)
+
+"CT057" Exclusao de registro especifico que esteja criado - HTTP 200 esperado(Testes das APIs /Deposits | /Items | /Inventories)  Time elapsed: 1.6 sec  <<< FAILURE!
+org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 200; recebido da API: 204; expected:<20[0]> but was:<20[4]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ?.espero receber um response code "200"(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:328)
+
+Criacao de novo deposito com nenhum dos campos preenchidos(Testes do sistema web de controle de estoque)  Time elapsed: 8.569 sec  <<< FAILURE!
+java.lang.AssertionError: O sistema permitiu a criação do deposito sem nenhum campo preenchido!!
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at stepDefinitions.WebStepDefinition.esperoQueNaoCrieODeposito(WebStepDefinition.java:181)
+	at ?.espero que nao crie o deposito(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/TesteWeb.feature:79)
+
+Edicao de deposito ja criado com retirada de todos os campos(Testes do sistema web de controle de estoque)  Time elapsed: 9.778 sec  <<< FAILURE!
+java.lang.AssertionError: O sistema permitiu atualizar o deposito com todos os campos retirados
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at stepDefinitions.WebStepDefinition.esperoQueNaoAtualizeODeposito(WebStepDefinition.java:223)
+	at ?.espero que nao atualize o deposito(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/TesteWeb.feature:92)
+
+Criacao de novo item com nenhum dos campos preenchidos(Testes do sistema web de controle de estoque)  Time elapsed: 7.551 sec  <<< FAILURE!
+java.lang.AssertionError: O sistema permitiu a criação do item sem nenhum campo preenchido!!
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at stepDefinitions.WebStepDefinition.esperoQueNaoCrieOitem(WebStepDefinition.java:272)
+	at ?.espero que nao crie o item(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/TesteWeb.feature:111)
+
+Edicao de item ja criado com retirada de todos os campos(Testes do sistema web de controle de estoque)  Time elapsed: 9.441 sec  <<< FAILURE!
+java.lang.AssertionError: O sistema permitiu atualizar o item com todos os campos retirados
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at stepDefinitions.WebStepDefinition.esperoQueNaoAtualizeOitem(WebStepDefinition.java:312)
+	at ?.espero que nao atualize o item(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/TesteWeb.feature:124)
+
