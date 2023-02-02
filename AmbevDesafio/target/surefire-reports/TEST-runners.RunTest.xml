@@ -1,0 +1,1225 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="83" failures="39" name="runners.RunTest" time="447.272" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="cucumber.options" value="--tags @TesteCompleto"/>
+    <property name="java.vm.version" value="11.0.13+10-LTS-370"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.13\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Microsoft\Desktop\WorkspaceDesafio\AmbevDesafio"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="test" value="RunTest"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Microsoft\Desktop\WorkspaceDesafio\AmbevDesafio"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.13+10-LTS-370"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\MICROS~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="c:\mvn\apache-maven-3.8.4\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.13\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;c:\python310\scripts\;c:\python310\;c:\program files\common files\oracle\java\javapath;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;c:\mvn\apache-maven-3.8.4\bin;c:\program files\git\cmd;c:\program files\nodejs\;c:\programdata\chocolatey\bin;c:\program files\dotnet\;c:\users\microsoft\appdata\local\android\sdk\tools;c:\users\microsoft\appdata\local\android\sdk\platform-tools;c:\users\microsoft\appdata\local\android\sdk\tools\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Microsoft\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;C:\Users\Microsoft\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Microsoft\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="c:\mvn\apache-maven-3.8.4/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="c:\mvn\apache-maven-3.8.4\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\Microsoft"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="Microsoft"/>
+    <property name="java.class.path" value="c:\mvn\apache-maven-3.8.4\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dtest=RunTest -Dcucumber.options=--tags @TesteCompleto"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.13"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.13"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="cp850"/>
+    <property name="maven.home" value="c:\mvn\apache-maven-3.8.4"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-10-19"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="sun.stdout.encoding" value="cp850"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="Criacao de um deposito com todos os campos preenchidos - HTTP 200 esperado" time="3.076">
+    <failure message="O Response code foi diferente do esperado!, esperado: 200; recebido da API: 201; expected:&lt;20[0]&gt; but was:&lt;20[1]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 200; recebido da API: 201; expected:&lt;20[0]&gt; but was:&lt;20[1]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;200&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:11)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @CT001
+Scenario: Criacao de um deposito com todos os campos preenchidos - HTTP 200 esperado                         &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:6&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postDepositsCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocados(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mendpointDeposits&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                 &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComo(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao POST pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m           &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPOSTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:271,&quot;name&quot;:&quot;Deposito de teste T2YJo8YeP1&quot;,&quot;address&quot;:&quot;rua teste T2YJo8YeP1&quot;,&quot;city&quot;:&quot;Campinas&quot;,&quot;state&quot;:&quot;São Paulo&quot;,&quot;zipcode&quot;:&quot;13156641&quot;,&quot;created_at&quot;:&quot;2023-02-02T15:18:04.589Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:18:04.589Z&quot;,&quot;items&quot;:[],&quot;url&quot;:&quot;https://test-bees.herokuapp.com/deposits/271.json&quot;}
+code Rest assured: 201
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m200&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                 &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 200; recebido da API: 201; expected:&lt;20[0]&gt; but was:&lt;20[1]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;200&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:11)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mid&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^\d*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                              &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mname&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^.*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                             &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1maddress&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^.*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                          &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcity&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^.*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                             &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mzipcode&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^.*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                          &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcreated_at&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^.*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                       &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mupdated_at&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^.*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                       &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1murl&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^.*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                              &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="Criacao de um inventario com todos os campos preenchidos - HTTP 200 esperado" time="3.386">
+    <failure message="O Response code foi diferente do esperado!, esperado: 200; recebido da API: 201; expected:&lt;20[0]&gt; but was:&lt;20[1]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 200; recebido da API: 201; expected:&lt;20[0]&gt; but was:&lt;20[1]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;200&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:28)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @CT018
+Scenario: Criacao de um inventario com todos os campos preenchidos - HTTP 200 esperado                          &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:23&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postInventoriesCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocados(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mendpointInventories&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                 &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComo(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao POST pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m              &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPOSTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:81,&quot;item_id&quot;:261,&quot;deposit_id&quot;:272,&quot;item_count&quot;:888,&quot;created_at&quot;:&quot;2023-02-02T15:18:08.149Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:18:08.149Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/inventories/81.json&quot;}
+code Rest assured: 201
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m200&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                    &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 200; recebido da API: 201; expected:&lt;20[0]&gt; but was:&lt;20[1]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;200&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:28)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mid&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^\d*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                 &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mitem_id&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^\d*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                            &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mdeposit_id&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^\d*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                         &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mitem_count&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^\d*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                         &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcreated_at&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^.*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                          &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mupdated_at&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^.*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                          &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1murl&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^.*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                 &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="Criacao de um item com todos os campos preenchidos - HTTP 200 esperado" time="0.866">
+    <failure message="O Response code foi diferente do esperado!, esperado: 200; recebido da API: 201; expected:&lt;20[0]&gt; but was:&lt;20[1]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 200; recebido da API: 201; expected:&lt;20[0]&gt; but was:&lt;20[1]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;200&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:44)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @CT038
+Scenario: Criacao de um item com todos os campos preenchidos - HTTP 200 esperado                          &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:39&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postItemsCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocados(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mendpointItems&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                 &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComo(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao POST pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m        &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPOSTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:262,&quot;name&quot;:&quot;Teste qpTBerLm16&quot;,&quot;height&quot;:&quot;24.0&quot;,&quot;width&quot;:&quot;20.0&quot;,&quot;weight&quot;:&quot;20.0&quot;,&quot;created_at&quot;:&quot;2023-02-02T15:18:09.015Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:18:09.015Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/items/262.json&quot;}
+code Rest assured: 201
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m200&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                              &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 200; recebido da API: 201; expected:&lt;20[0]&gt; but was:&lt;20[1]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;200&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:44)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mid&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^\d*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                           &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mname&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^.*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                          &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mheight&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^.*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                        &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mwidth&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^.*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                         &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mweight&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^.*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                        &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcreated_at&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^.*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                    &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mupdated_at&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^.*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                    &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mespero que o objeto do body &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1murl&amp;#27;[0m&amp;#27;[36m&quot; venha com a estrutura do regex &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m(^.*$)&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                           &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoQueOObjetoDoBodyVenhaComAEstruturaDoRegex(java.lang.String,java.lang.String)&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="Consulta de depositos criados  - HTTP 200 esperado" time="3.286"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="Consulta de depositos especifico  - HTTP 200 esperado" time="1.961"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="Consulta de inventarios totais  - HTTP 200 esperado" time="3.609"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="Consulta de inventario especifico  - HTTP 200 esperado" time="3.463"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="Consulta de items totais  - HTTP 200 esperado" time="2.185"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="Consulta de items especifico  - HTTP 200 esperado" time="1.749"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT009&quot; Consulta de registro especifico que nao esteja criado - HTTP 404 esperado" time="0.811"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT027&quot; Consulta de registro especifico que nao esteja criado - HTTP 404 esperado" time="0.804"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT045&quot; Consulta de registro especifico que nao esteja criado - HTTP 404 esperado" time="0.803"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT010&quot; alteracao PATCH com todos os campos  - HTTP 200 esperado" time="1.71"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT046&quot; alteracao PATCH com todos os campos  - HTTP 200 esperado" time="1.709"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT028&quot; alteracao PATCH com todos os campos  - HTTP 200 esperado" time="5.322"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT011&quot; alteracao PATCH com todos apenas um campo  - HTTP 200 esperado" time="1.626"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT012&quot; alteracao PATCH com nenhum campo  - HTTP 200 esperado" time="1.796"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT013&quot; alteracao PUT com todos os campos  - HTTP 200 esperado" time="1.757"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT051&quot; alteracao PUT com todos os campos  - HTTP 200 esperado" time="1.66"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT032&quot; alteracao PUT com todos os campos  - HTTP 200 esperado" time="5.071"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT052&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado" time="1.663">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @AlteracaoPUTcomFaltaDeCamposObrigatorios
+Scenario Outline: &quot;CT052&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado                                      &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:230&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque eu tenha um registro &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;items&quot;&amp;#27;[0m&amp;#27;[32m criado&amp;#27;[0m                                                                                      &amp;#27;[90m# stepDefinitions.APIStepDefinition.queEuTenhaUmRegistroCriado(java.lang.String)&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;name&quot;:&quot;Teste bejjURNPKF&quot;,&quot;height&quot;:&quot;24&quot;,&quot;width&quot;:&quot;20&quot;,&quot;weight&quot;:&quot;20&quot;}
+Body apos a remoÃ§Ã£o do campo: {&quot;height&quot;:&quot;24&quot;,&quot;width&quot;:&quot;20&quot;,&quot;weight&quot;:&quot;20&quot;}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postItemsCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;name&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+endpoint: https://test-bees.herokuapp.com/items/273
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;endpointItems&quot;&amp;#27;[0m&amp;#27;[32m com parametro de id valido&amp;#27;[0m                                                 &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComoComParametroDeIdValido(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao PUT pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                    &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPUTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:273,&quot;name&quot;:&quot;Teste 31mfl&quot;,&quot;height&quot;:&quot;24.0&quot;,&quot;width&quot;:&quot;20.0&quot;,&quot;weight&quot;:&quot;20.0&quot;,&quot;created_at&quot;:&quot;2023-02-02T15:18:49.271Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:18:49.271Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/items/273.json&quot;}
+code Rest assured: 200
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                         &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT053&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado #1" time="1.751">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @AlteracaoPUTcomFaltaDeCamposObrigatorios
+Scenario Outline: &quot;CT053&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado                                        &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:231&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque eu tenha um registro &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;items&quot;&amp;#27;[0m&amp;#27;[32m criado&amp;#27;[0m                                                                                        &amp;#27;[90m# stepDefinitions.APIStepDefinition.queEuTenhaUmRegistroCriado(java.lang.String)&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;name&quot;:&quot;Teste Trn7WebHgA&quot;,&quot;height&quot;:&quot;24&quot;,&quot;width&quot;:&quot;20&quot;,&quot;weight&quot;:&quot;20&quot;}
+Body apos a remoÃ§Ã£o do campo: {&quot;name&quot;:&quot;Teste Trn7WebHgA&quot;,&quot;width&quot;:&quot;20&quot;,&quot;weight&quot;:&quot;20&quot;}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postItemsCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;height&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+endpoint: https://test-bees.herokuapp.com/items/274
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;endpointItems&quot;&amp;#27;[0m&amp;#27;[32m com parametro de id valido&amp;#27;[0m                                                   &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComoComParametroDeIdValido(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao PUT pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                      &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPUTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:274,&quot;name&quot;:&quot;Teste Trn7WebHgA&quot;,&quot;height&quot;:&quot;24.0&quot;,&quot;width&quot;:&quot;20.0&quot;,&quot;weight&quot;:&quot;20.0&quot;,&quot;created_at&quot;:&quot;2023-02-02T15:18:50.902Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:18:51.791Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/items/274.json&quot;}
+code Rest assured: 200
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                           &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT053&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado #2" time="1.616">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @AlteracaoPUTcomFaltaDeCamposObrigatorios
+Scenario Outline: &quot;CT053&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado                                        &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:232&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque eu tenha um registro &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;items&quot;&amp;#27;[0m&amp;#27;[32m criado&amp;#27;[0m                                                                                        &amp;#27;[90m# stepDefinitions.APIStepDefinition.queEuTenhaUmRegistroCriado(java.lang.String)&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;name&quot;:&quot;Teste JgwGvtPNUs&quot;,&quot;height&quot;:&quot;24&quot;,&quot;width&quot;:&quot;20&quot;,&quot;weight&quot;:&quot;20&quot;}
+Body apos a remoÃ§Ã£o do campo: {&quot;name&quot;:&quot;Teste JgwGvtPNUs&quot;,&quot;height&quot;:&quot;24&quot;,&quot;width&quot;:&quot;20&quot;}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postItemsCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;weight&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+endpoint: https://test-bees.herokuapp.com/items/275
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;endpointItems&quot;&amp;#27;[0m&amp;#27;[32m com parametro de id valido&amp;#27;[0m                                                   &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComoComParametroDeIdValido(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao PUT pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                      &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPUTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:275,&quot;name&quot;:&quot;Teste JgwGvtPNUs&quot;,&quot;height&quot;:&quot;24.0&quot;,&quot;width&quot;:&quot;20.0&quot;,&quot;weight&quot;:&quot;20.0&quot;,&quot;created_at&quot;:&quot;2023-02-02T15:18:52.602Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:18:53.412Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/items/275.json&quot;}
+code Rest assured: 200
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                           &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT053&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado #3" time="1.583">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @AlteracaoPUTcomFaltaDeCamposObrigatorios
+Scenario Outline: &quot;CT053&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado                                       &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:233&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque eu tenha um registro &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;items&quot;&amp;#27;[0m&amp;#27;[32m criado&amp;#27;[0m                                                                                       &amp;#27;[90m# stepDefinitions.APIStepDefinition.queEuTenhaUmRegistroCriado(java.lang.String)&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;name&quot;:&quot;Teste N8GGyEvs34&quot;,&quot;height&quot;:&quot;24&quot;,&quot;width&quot;:&quot;20&quot;,&quot;weight&quot;:&quot;20&quot;}
+Body apos a remoÃ§Ã£o do campo: {&quot;name&quot;:&quot;Teste N8GGyEvs34&quot;,&quot;height&quot;:&quot;24&quot;,&quot;weight&quot;:&quot;20&quot;}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postItemsCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;width&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+endpoint: https://test-bees.herokuapp.com/items/276
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;endpointItems&quot;&amp;#27;[0m&amp;#27;[32m com parametro de id valido&amp;#27;[0m                                                  &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComoComParametroDeIdValido(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao PUT pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                     &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPUTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:276,&quot;name&quot;:&quot;Teste N8GGyEvs34&quot;,&quot;height&quot;:&quot;24.0&quot;,&quot;width&quot;:&quot;20.0&quot;,&quot;weight&quot;:&quot;20.0&quot;,&quot;created_at&quot;:&quot;2023-02-02T15:18:54.200Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:18:54.985Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/items/276.json&quot;}
+code Rest assured: 200
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                          &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT033&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado" time="4.998">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @AlteracaoPUTcomFaltaDeCamposObrigatorios
+Scenario Outline: &quot;CT033&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado                                               &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:234&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque eu tenha um registro &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;inventario&quot;&amp;#27;[0m&amp;#27;[32m criado&amp;#27;[0m                                                                                          &amp;#27;[90m# stepDefinitions.APIStepDefinition.queEuTenhaUmRegistroCriado(java.lang.String)&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;item_count&quot;:888,&quot;item_id&quot;:278,&quot;deposit_id&quot;:286}
+Body apos a remoÃ§Ã£o do campo: {&quot;item_count&quot;:888,&quot;deposit_id&quot;:286}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postInventoriesCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;item_id&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+endpoint: https://test-bees.herokuapp.com/inventories/86
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;endpointInventories&quot;&amp;#27;[0m&amp;#27;[32m com parametro de id valido&amp;#27;[0m                                                    &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComoComParametroDeIdValido(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao PUT pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                             &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPUTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:86,&quot;item_id&quot;:277,&quot;deposit_id&quot;:286,&quot;item_count&quot;:888,&quot;created_at&quot;:&quot;2023-02-02T15:18:57.517Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:18:59.995Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/inventories/86.json&quot;}
+code Rest assured: 200
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                                  &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT034&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado" time="5.412">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @AlteracaoPUTcomFaltaDeCamposObrigatorios
+Scenario Outline: &quot;CT034&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado                                                  &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:235&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque eu tenha um registro &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;inventario&quot;&amp;#27;[0m&amp;#27;[32m criado&amp;#27;[0m                                                                                             &amp;#27;[90m# stepDefinitions.APIStepDefinition.queEuTenhaUmRegistroCriado(java.lang.String)&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;item_count&quot;:888,&quot;item_id&quot;:280,&quot;deposit_id&quot;:288}
+Body apos a remoÃ§Ã£o do campo: {&quot;item_count&quot;:888,&quot;item_id&quot;:280}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postInventoriesCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;deposit_id&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+endpoint: https://test-bees.herokuapp.com/inventories/87
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;endpointInventories&quot;&amp;#27;[0m&amp;#27;[32m com parametro de id valido&amp;#27;[0m                                                       &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComoComParametroDeIdValido(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao PUT pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                                &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPUTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:87,&quot;item_id&quot;:280,&quot;deposit_id&quot;:287,&quot;item_count&quot;:888,&quot;created_at&quot;:&quot;2023-02-02T15:19:02.604Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:19:05.416Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/inventories/87.json&quot;}
+code Rest assured: 200
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                                     &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT035&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado" time="4.876">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @AlteracaoPUTcomFaltaDeCamposObrigatorios
+Scenario Outline: &quot;CT035&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado                                                  &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:236&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque eu tenha um registro &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;inventario&quot;&amp;#27;[0m&amp;#27;[32m criado&amp;#27;[0m                                                                                             &amp;#27;[90m# stepDefinitions.APIStepDefinition.queEuTenhaUmRegistroCriado(java.lang.String)&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;item_count&quot;:888,&quot;item_id&quot;:282,&quot;deposit_id&quot;:290}
+Body apos a remoÃ§Ã£o do campo: {&quot;item_id&quot;:282,&quot;deposit_id&quot;:290}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postInventoriesCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;item_count&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+endpoint: https://test-bees.herokuapp.com/inventories/88
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;endpointInventories&quot;&amp;#27;[0m&amp;#27;[32m com parametro de id valido&amp;#27;[0m                                                       &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComoComParametroDeIdValido(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao PUT pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                                &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPUTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:88,&quot;item_id&quot;:282,&quot;deposit_id&quot;:290,&quot;item_count&quot;:888,&quot;created_at&quot;:&quot;2023-02-02T15:19:07.879Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:19:10.289Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/inventories/88.json&quot;}
+code Rest assured: 200
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                                     &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:227)
+&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT047&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado" time="1.654">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @AlteracaoPATCHcomFaltaDeCamposObrigatorios
+Scenario Outline: &quot;CT047&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado                                      &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:248&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque eu tenha um registro &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;items&quot;&amp;#27;[0m&amp;#27;[32m criado&amp;#27;[0m                                                                                      &amp;#27;[90m# stepDefinitions.APIStepDefinition.queEuTenhaUmRegistroCriado(java.lang.String)&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;name&quot;:&quot;Teste plQmqsSAd9&quot;,&quot;height&quot;:&quot;24&quot;,&quot;width&quot;:&quot;20&quot;,&quot;weight&quot;:&quot;20&quot;}
+Body apos a remoÃ§Ã£o do campo: {&quot;height&quot;:&quot;24&quot;,&quot;width&quot;:&quot;20&quot;,&quot;weight&quot;:&quot;20&quot;}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postItemsCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;name&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+endpoint: https://test-bees.herokuapp.com/items/283
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;endpointItems&quot;&amp;#27;[0m&amp;#27;[32m com parametro de id valido&amp;#27;[0m                                                 &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComoComParametroDeIdValido(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao PATCH pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                  &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPATCHPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:283,&quot;name&quot;:&quot;Teste NkOsk&quot;,&quot;height&quot;:&quot;24.0&quot;,&quot;width&quot;:&quot;20.0&quot;,&quot;weight&quot;:&quot;20.0&quot;,&quot;created_at&quot;:&quot;2023-02-02T15:19:11.084Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:19:11.084Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/items/283.json&quot;}
+code Rest assured: 200
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                         &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT048&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado" time="1.653">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @AlteracaoPATCHcomFaltaDeCamposObrigatorios
+Scenario Outline: &quot;CT048&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado                                        &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:249&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque eu tenha um registro &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;items&quot;&amp;#27;[0m&amp;#27;[32m criado&amp;#27;[0m                                                                                        &amp;#27;[90m# stepDefinitions.APIStepDefinition.queEuTenhaUmRegistroCriado(java.lang.String)&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;name&quot;:&quot;Teste j6RXCdo2N2&quot;,&quot;height&quot;:&quot;24&quot;,&quot;width&quot;:&quot;20&quot;,&quot;weight&quot;:&quot;20&quot;}
+Body apos a remoÃ§Ã£o do campo: {&quot;name&quot;:&quot;Teste j6RXCdo2N2&quot;,&quot;width&quot;:&quot;20&quot;,&quot;weight&quot;:&quot;20&quot;}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postItemsCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;height&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+endpoint: https://test-bees.herokuapp.com/items/284
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;endpointItems&quot;&amp;#27;[0m&amp;#27;[32m com parametro de id valido&amp;#27;[0m                                                   &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComoComParametroDeIdValido(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao PATCH pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                    &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPATCHPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:284,&quot;name&quot;:&quot;Teste j6RXCdo2N2&quot;,&quot;height&quot;:&quot;24.0&quot;,&quot;width&quot;:&quot;20.0&quot;,&quot;weight&quot;:&quot;20.0&quot;,&quot;created_at&quot;:&quot;2023-02-02T15:19:12.744Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:19:13.592Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/items/284.json&quot;}
+code Rest assured: 200
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                           &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT049&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado" time="1.652">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @AlteracaoPATCHcomFaltaDeCamposObrigatorios
+Scenario Outline: &quot;CT049&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado                                        &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:250&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque eu tenha um registro &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;items&quot;&amp;#27;[0m&amp;#27;[32m criado&amp;#27;[0m                                                                                        &amp;#27;[90m# stepDefinitions.APIStepDefinition.queEuTenhaUmRegistroCriado(java.lang.String)&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;name&quot;:&quot;Teste 0822AAI0Cr&quot;,&quot;height&quot;:&quot;24&quot;,&quot;width&quot;:&quot;20&quot;,&quot;weight&quot;:&quot;20&quot;}
+Body apos a remoÃ§Ã£o do campo: {&quot;name&quot;:&quot;Teste 0822AAI0Cr&quot;,&quot;height&quot;:&quot;24&quot;,&quot;width&quot;:&quot;20&quot;}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postItemsCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;weight&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+endpoint: https://test-bees.herokuapp.com/items/285
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;endpointItems&quot;&amp;#27;[0m&amp;#27;[32m com parametro de id valido&amp;#27;[0m                                                   &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComoComParametroDeIdValido(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao PATCH pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                    &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPATCHPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:285,&quot;name&quot;:&quot;Teste 0822AAI0Cr&quot;,&quot;height&quot;:&quot;24.0&quot;,&quot;width&quot;:&quot;20.0&quot;,&quot;weight&quot;:&quot;20.0&quot;,&quot;created_at&quot;:&quot;2023-02-02T15:19:14.395Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:19:15.245Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/items/285.json&quot;}
+code Rest assured: 200
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                           &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT050&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado" time="1.764">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @AlteracaoPATCHcomFaltaDeCamposObrigatorios
+Scenario Outline: &quot;CT050&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado                                       &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:251&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque eu tenha um registro &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;items&quot;&amp;#27;[0m&amp;#27;[32m criado&amp;#27;[0m                                                                                       &amp;#27;[90m# stepDefinitions.APIStepDefinition.queEuTenhaUmRegistroCriado(java.lang.String)&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;name&quot;:&quot;Teste PuwXYH0fsX&quot;,&quot;height&quot;:&quot;24&quot;,&quot;width&quot;:&quot;20&quot;,&quot;weight&quot;:&quot;20&quot;}
+Body apos a remoÃ§Ã£o do campo: {&quot;name&quot;:&quot;Teste PuwXYH0fsX&quot;,&quot;height&quot;:&quot;24&quot;,&quot;weight&quot;:&quot;20&quot;}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postItemsCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;width&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+endpoint: https://test-bees.herokuapp.com/items/286
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;endpointItems&quot;&amp;#27;[0m&amp;#27;[32m com parametro de id valido&amp;#27;[0m                                                  &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComoComParametroDeIdValido(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao PATCH pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                   &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPATCHPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:286,&quot;name&quot;:&quot;Teste PuwXYH0fsX&quot;,&quot;height&quot;:&quot;24.0&quot;,&quot;width&quot;:&quot;20.0&quot;,&quot;weight&quot;:&quot;20.0&quot;,&quot;created_at&quot;:&quot;2023-02-02T15:19:16.132Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:19:17.013Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/items/286.json&quot;}
+code Rest assured: 200
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                          &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT029&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado" time="4.976">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @AlteracaoPATCHcomFaltaDeCamposObrigatorios
+Scenario Outline: &quot;CT029&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado                                               &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:252&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque eu tenha um registro &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;inventario&quot;&amp;#27;[0m&amp;#27;[32m criado&amp;#27;[0m                                                                                          &amp;#27;[90m# stepDefinitions.APIStepDefinition.queEuTenhaUmRegistroCriado(java.lang.String)&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;item_count&quot;:888,&quot;item_id&quot;:288,&quot;deposit_id&quot;:292}
+Body apos a remoÃ§Ã£o do campo: {&quot;item_count&quot;:888,&quot;deposit_id&quot;:292}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postInventoriesCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;item_id&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+endpoint: https://test-bees.herokuapp.com/inventories/89
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;endpointInventories&quot;&amp;#27;[0m&amp;#27;[32m com parametro de id valido&amp;#27;[0m                                                    &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComoComParametroDeIdValido(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao PATCH pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                           &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPATCHPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:89,&quot;item_id&quot;:287,&quot;deposit_id&quot;:292,&quot;item_count&quot;:888,&quot;created_at&quot;:&quot;2023-02-02T15:19:19.548Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:19:21.990Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/inventories/89.json&quot;}
+code Rest assured: 200
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                                  &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT030&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado" time="4.952">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @AlteracaoPATCHcomFaltaDeCamposObrigatorios
+Scenario Outline: &quot;CT030&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado                                                  &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:253&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque eu tenha um registro &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;inventario&quot;&amp;#27;[0m&amp;#27;[32m criado&amp;#27;[0m                                                                                             &amp;#27;[90m# stepDefinitions.APIStepDefinition.queEuTenhaUmRegistroCriado(java.lang.String)&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;item_count&quot;:888,&quot;item_id&quot;:290,&quot;deposit_id&quot;:294}
+Body apos a remoÃ§Ã£o do campo: {&quot;item_count&quot;:888,&quot;item_id&quot;:290}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postInventoriesCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;deposit_id&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+endpoint: https://test-bees.herokuapp.com/inventories/90
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;endpointInventories&quot;&amp;#27;[0m&amp;#27;[32m com parametro de id valido&amp;#27;[0m                                                       &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComoComParametroDeIdValido(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao PATCH pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                              &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPATCHPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:90,&quot;item_id&quot;:290,&quot;deposit_id&quot;:293,&quot;item_count&quot;:888,&quot;created_at&quot;:&quot;2023-02-02T15:19:24.466Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:19:26.942Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/inventories/90.json&quot;}
+code Rest assured: 200
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                                     &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT031&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado" time="5.192">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @AlteracaoPATCHcomFaltaDeCamposObrigatorios
+Scenario Outline: &quot;CT031&quot; alteracao PUT com a falta de campos obrigatorios  - HTTP 400 esperado                                                  &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:254&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque eu tenha um registro &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;inventario&quot;&amp;#27;[0m&amp;#27;[32m criado&amp;#27;[0m                                                                                             &amp;#27;[90m# stepDefinitions.APIStepDefinition.queEuTenhaUmRegistroCriado(java.lang.String)&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;item_count&quot;:888,&quot;item_id&quot;:292,&quot;deposit_id&quot;:296}
+Body apos a remoÃ§Ã£o do campo: {&quot;item_id&quot;:292,&quot;deposit_id&quot;:296}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postInventoriesCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;item_count&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+endpoint: https://test-bees.herokuapp.com/inventories/91
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;endpointInventories&quot;&amp;#27;[0m&amp;#27;[32m com parametro de id valido&amp;#27;[0m                                                       &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComoComParametroDeIdValido(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao PATCH pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                              &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPATCHPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:91,&quot;item_id&quot;:292,&quot;deposit_id&quot;:296,&quot;item_count&quot;:888,&quot;created_at&quot;:&quot;2023-02-02T15:19:29.615Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:19:32.119Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/inventories/91.json&quot;}
+code Rest assured: 200
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                                     &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 200; expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:245)
+&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT014&quot; alteracao PUT com todos apenas um campo  - HTTP 200 esperado" time="1.606"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT015&quot; alteracao PUT com nenhum campo  - HTTP 200 esperado" time="1.783"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT002&quot; Retirada de campos obrigatorios do payload" time="0.827">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @PostComRetiradaDeCampos
+Scenario Outline: &quot;CT002&quot; Retirada de campos obrigatorios do payload                                                                    &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:294&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;name&quot;:&quot;Deposito de teste sxEMD45x1h&quot;,&quot;address&quot;:&quot;rua teste sxEMD45x1h&quot;,&quot;city&quot;:&quot;Campinas&quot;,&quot;state&quot;:&quot;São Paulo&quot;,&quot;zipcode&quot;:&quot;13156641&quot;}
+Body apos a remoÃ§Ã£o do campo: {&quot;address&quot;:&quot;rua teste sxEMD45x1h&quot;,&quot;city&quot;:&quot;Campinas&quot;,&quot;state&quot;:&quot;São Paulo&quot;,&quot;zipcode&quot;:&quot;13156641&quot;}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postDepositsCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;name&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mendpointDeposits&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                            &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComo(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao POST pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                      &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPOSTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:299,&quot;name&quot;:null,&quot;address&quot;:&quot;rua teste sxEMD45x1h&quot;,&quot;city&quot;:&quot;Campinas&quot;,&quot;state&quot;:&quot;São Paulo&quot;,&quot;zipcode&quot;:&quot;13156641&quot;,&quot;created_at&quot;:&quot;2023-02-02T15:19:36.350Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:19:36.350Z&quot;,&quot;items&quot;:[],&quot;url&quot;:&quot;https://test-bees.herokuapp.com/deposits/299.json&quot;}
+code Rest assured: 201
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                            &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mque venha um erro &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;erro&quot;&amp;#27;[0m&amp;#27;[36m no response body&amp;#27;[0m                                                                                         &amp;#27;[90m# stepDefinitions.APIStepDefinition.queVenhaUmErroNoResponseBody(java.lang.String)&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT003&quot; Retirada de campos obrigatorios do payload" time="0.882">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @PostComRetiradaDeCampos
+Scenario Outline: &quot;CT003&quot; Retirada de campos obrigatorios do payload                                                                       &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:295&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;name&quot;:&quot;Deposito de teste LDrlHYZRs9&quot;,&quot;address&quot;:&quot;rua teste LDrlHYZRs9&quot;,&quot;city&quot;:&quot;Campinas&quot;,&quot;state&quot;:&quot;São Paulo&quot;,&quot;zipcode&quot;:&quot;13156641&quot;}
+Body apos a remoÃ§Ã£o do campo: {&quot;name&quot;:&quot;Deposito de teste LDrlHYZRs9&quot;,&quot;city&quot;:&quot;Campinas&quot;,&quot;state&quot;:&quot;São Paulo&quot;,&quot;zipcode&quot;:&quot;13156641&quot;}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postDepositsCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;address&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mendpointDeposits&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                               &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComo(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao POST pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                         &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPOSTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:300,&quot;name&quot;:&quot;Deposito de teste LDrlHYZRs9&quot;,&quot;address&quot;:null,&quot;city&quot;:&quot;Campinas&quot;,&quot;state&quot;:&quot;São Paulo&quot;,&quot;zipcode&quot;:&quot;13156641&quot;,&quot;created_at&quot;:&quot;2023-02-02T15:19:37.234Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:19:37.234Z&quot;,&quot;items&quot;:[],&quot;url&quot;:&quot;https://test-bees.herokuapp.com/deposits/300.json&quot;}
+code Rest assured: 201
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                               &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mque venha um erro &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;erro&quot;&amp;#27;[0m&amp;#27;[36m no response body&amp;#27;[0m                                                                                            &amp;#27;[90m# stepDefinitions.APIStepDefinition.queVenhaUmErroNoResponseBody(java.lang.String)&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT004&quot; Retirada de campos obrigatorios do payload" time="0.924">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @PostComRetiradaDeCampos
+Scenario Outline: &quot;CT004&quot; Retirada de campos obrigatorios do payload                                                                    &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:296&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;name&quot;:&quot;Deposito de teste ORJUy4Wgtx&quot;,&quot;address&quot;:&quot;rua teste ORJUy4Wgtx&quot;,&quot;city&quot;:&quot;Campinas&quot;,&quot;state&quot;:&quot;São Paulo&quot;,&quot;zipcode&quot;:&quot;13156641&quot;}
+Body apos a remoÃ§Ã£o do campo: {&quot;name&quot;:&quot;Deposito de teste ORJUy4Wgtx&quot;,&quot;address&quot;:&quot;rua teste ORJUy4Wgtx&quot;,&quot;state&quot;:&quot;São Paulo&quot;,&quot;zipcode&quot;:&quot;13156641&quot;}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postDepositsCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;city&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mendpointDeposits&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                            &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComo(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao POST pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                      &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPOSTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:301,&quot;name&quot;:&quot;Deposito de teste ORJUy4Wgtx&quot;,&quot;address&quot;:&quot;rua teste ORJUy4Wgtx&quot;,&quot;city&quot;:null,&quot;state&quot;:&quot;São Paulo&quot;,&quot;zipcode&quot;:&quot;13156641&quot;,&quot;created_at&quot;:&quot;2023-02-02T15:19:38.093Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:19:38.093Z&quot;,&quot;items&quot;:[],&quot;url&quot;:&quot;https://test-bees.herokuapp.com/deposits/301.json&quot;}
+code Rest assured: 201
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                            &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mque venha um erro &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;erro&quot;&amp;#27;[0m&amp;#27;[36m no response body&amp;#27;[0m                                                                                         &amp;#27;[90m# stepDefinitions.APIStepDefinition.queVenhaUmErroNoResponseBody(java.lang.String)&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT005&quot; Retirada de campos obrigatorios do payload" time="0.756">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @PostComRetiradaDeCampos
+Scenario Outline: &quot;CT005&quot; Retirada de campos obrigatorios do payload                                                                     &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:297&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;name&quot;:&quot;Deposito de teste Au6qlRQmHa&quot;,&quot;address&quot;:&quot;rua teste Au6qlRQmHa&quot;,&quot;city&quot;:&quot;Campinas&quot;,&quot;state&quot;:&quot;São Paulo&quot;,&quot;zipcode&quot;:&quot;13156641&quot;}
+Body apos a remoÃ§Ã£o do campo: {&quot;name&quot;:&quot;Deposito de teste Au6qlRQmHa&quot;,&quot;address&quot;:&quot;rua teste Au6qlRQmHa&quot;,&quot;city&quot;:&quot;Campinas&quot;,&quot;zipcode&quot;:&quot;13156641&quot;}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postDepositsCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;state&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mendpointDeposits&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                             &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComo(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao POST pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                       &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPOSTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:302,&quot;name&quot;:&quot;Deposito de teste Au6qlRQmHa&quot;,&quot;address&quot;:&quot;rua teste Au6qlRQmHa&quot;,&quot;city&quot;:&quot;Campinas&quot;,&quot;state&quot;:null,&quot;zipcode&quot;:&quot;13156641&quot;,&quot;created_at&quot;:&quot;2023-02-02T15:19:38.919Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:19:38.919Z&quot;,&quot;items&quot;:[],&quot;url&quot;:&quot;https://test-bees.herokuapp.com/deposits/302.json&quot;}
+code Rest assured: 201
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                             &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mque venha um erro &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;erro&quot;&amp;#27;[0m&amp;#27;[36m no response body&amp;#27;[0m                                                                                          &amp;#27;[90m# stepDefinitions.APIStepDefinition.queVenhaUmErroNoResponseBody(java.lang.String)&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT006&quot; Retirada de campos obrigatorios do payload" time="0.798">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @PostComRetiradaDeCampos
+Scenario Outline: &quot;CT006&quot; Retirada de campos obrigatorios do payload                                                                       &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:298&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;name&quot;:&quot;Deposito de teste iUmLebrbwn&quot;,&quot;address&quot;:&quot;rua teste iUmLebrbwn&quot;,&quot;city&quot;:&quot;Campinas&quot;,&quot;state&quot;:&quot;São Paulo&quot;,&quot;zipcode&quot;:&quot;13156641&quot;}
+Body apos a remoÃ§Ã£o do campo: {&quot;name&quot;:&quot;Deposito de teste iUmLebrbwn&quot;,&quot;address&quot;:&quot;rua teste iUmLebrbwn&quot;,&quot;city&quot;:&quot;Campinas&quot;,&quot;state&quot;:&quot;São Paulo&quot;}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postDepositsCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;zipcode&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mendpointDeposits&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                               &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComo(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao POST pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                         &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPOSTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:303,&quot;name&quot;:&quot;Deposito de teste iUmLebrbwn&quot;,&quot;address&quot;:&quot;rua teste iUmLebrbwn&quot;,&quot;city&quot;:&quot;Campinas&quot;,&quot;state&quot;:&quot;São Paulo&quot;,&quot;zipcode&quot;:null,&quot;created_at&quot;:&quot;2023-02-02T15:19:39.705Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:19:39.705Z&quot;,&quot;items&quot;:[],&quot;url&quot;:&quot;https://test-bees.herokuapp.com/deposits/303.json&quot;}
+code Rest assured: 201
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                               &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mque venha um erro &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;erro&quot;&amp;#27;[0m&amp;#27;[36m no response body&amp;#27;[0m                                                                                            &amp;#27;[90m# stepDefinitions.APIStepDefinition.queVenhaUmErroNoResponseBody(java.lang.String)&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT039&quot; Retirada de campos obrigatorios do payload" time="0.862">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @PostComRetiradaDeCampos
+Scenario Outline: &quot;CT039&quot; Retirada de campos obrigatorios do payload                                                                 &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:299&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;name&quot;:&quot;Teste kQ3kZZdsDj&quot;,&quot;height&quot;:&quot;24&quot;,&quot;width&quot;:&quot;20&quot;,&quot;weight&quot;:&quot;20&quot;}
+Body apos a remoÃ§Ã£o do campo: {&quot;height&quot;:&quot;24&quot;,&quot;width&quot;:&quot;20&quot;,&quot;weight&quot;:&quot;20&quot;}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postItemsCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;name&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mendpointItems&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                            &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComo(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao POST pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                   &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPOSTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:293,&quot;name&quot;:null,&quot;height&quot;:&quot;24.0&quot;,&quot;width&quot;:&quot;20.0&quot;,&quot;weight&quot;:&quot;20.0&quot;,&quot;created_at&quot;:&quot;2023-02-02T15:19:40.575Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:19:40.575Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/items/293.json&quot;}
+code Rest assured: 201
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                         &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mque venha um erro &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;erro&quot;&amp;#27;[0m&amp;#27;[36m no response body&amp;#27;[0m                                                                                      &amp;#27;[90m# stepDefinitions.APIStepDefinition.queVenhaUmErroNoResponseBody(java.lang.String)&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT040&quot; Retirada de campos obrigatorios do payload" time="0.82">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @PostComRetiradaDeCampos
+Scenario Outline: &quot;CT040&quot; Retirada de campos obrigatorios do payload                                                                   &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:300&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;name&quot;:&quot;Teste 5e23FOha8x&quot;,&quot;height&quot;:&quot;24&quot;,&quot;width&quot;:&quot;20&quot;,&quot;weight&quot;:&quot;20&quot;}
+Body apos a remoÃ§Ã£o do campo: {&quot;name&quot;:&quot;Teste 5e23FOha8x&quot;,&quot;width&quot;:&quot;20&quot;,&quot;weight&quot;:&quot;20&quot;}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postItemsCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;height&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mendpointItems&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                              &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComo(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao POST pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                     &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPOSTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:294,&quot;name&quot;:&quot;Teste 5e23FOha8x&quot;,&quot;height&quot;:null,&quot;width&quot;:&quot;20.0&quot;,&quot;weight&quot;:&quot;20.0&quot;,&quot;created_at&quot;:&quot;2023-02-02T15:19:41.378Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:19:41.378Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/items/294.json&quot;}
+code Rest assured: 201
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                           &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mque venha um erro &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;erro&quot;&amp;#27;[0m&amp;#27;[36m no response body&amp;#27;[0m                                                                                        &amp;#27;[90m# stepDefinitions.APIStepDefinition.queVenhaUmErroNoResponseBody(java.lang.String)&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT041&quot; Retirada de campos obrigatorios do payload" time="0.816">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @PostComRetiradaDeCampos
+Scenario Outline: &quot;CT041&quot; Retirada de campos obrigatorios do payload                                                                  &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:301&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;name&quot;:&quot;Teste M7kLUtdLDq&quot;,&quot;height&quot;:&quot;24&quot;,&quot;width&quot;:&quot;20&quot;,&quot;weight&quot;:&quot;20&quot;}
+Body apos a remoÃ§Ã£o do campo: {&quot;name&quot;:&quot;Teste M7kLUtdLDq&quot;,&quot;height&quot;:&quot;24&quot;,&quot;weight&quot;:&quot;20&quot;}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postItemsCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;width&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mendpointItems&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                             &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComo(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao POST pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                    &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPOSTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:295,&quot;name&quot;:&quot;Teste M7kLUtdLDq&quot;,&quot;height&quot;:&quot;24.0&quot;,&quot;width&quot;:null,&quot;weight&quot;:&quot;20.0&quot;,&quot;created_at&quot;:&quot;2023-02-02T15:19:42.207Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:19:42.207Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/items/295.json&quot;}
+code Rest assured: 201
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                          &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mque venha um erro &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;erro&quot;&amp;#27;[0m&amp;#27;[36m no response body&amp;#27;[0m                                                                                       &amp;#27;[90m# stepDefinitions.APIStepDefinition.queVenhaUmErroNoResponseBody(java.lang.String)&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT042&quot; Retirada de campos obrigatorios do payload" time="0.877">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @PostComRetiradaDeCampos
+Scenario Outline: &quot;CT042&quot; Retirada de campos obrigatorios do payload                                                                   &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:302&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;name&quot;:&quot;Teste NZ6RkjjaPf&quot;,&quot;height&quot;:&quot;24&quot;,&quot;width&quot;:&quot;20&quot;,&quot;weight&quot;:&quot;20&quot;}
+Body apos a remoÃ§Ã£o do campo: {&quot;name&quot;:&quot;Teste NZ6RkjjaPf&quot;,&quot;height&quot;:&quot;24&quot;,&quot;width&quot;:&quot;20&quot;}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postItemsCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;weight&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mendpointItems&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                              &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComo(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao POST pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                     &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPOSTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:296,&quot;name&quot;:&quot;Teste NZ6RkjjaPf&quot;,&quot;height&quot;:&quot;24.0&quot;,&quot;width&quot;:&quot;20.0&quot;,&quot;weight&quot;:null,&quot;created_at&quot;:&quot;2023-02-02T15:19:43.090Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:19:43.090Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/items/296.json&quot;}
+code Rest assured: 201
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                           &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mque venha um erro &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;erro&quot;&amp;#27;[0m&amp;#27;[36m no response body&amp;#27;[0m                                                                                        &amp;#27;[90m# stepDefinitions.APIStepDefinition.queVenhaUmErroNoResponseBody(java.lang.String)&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT019&quot; Retirada de campos obrigatorios do payload" time="2.532">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 422; expected:&lt;4[00]&gt; but was:&lt;4[22]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 422; expected:&lt;4[00]&gt; but was:&lt;4[22]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @PostComRetiradaDeCampos
+Scenario Outline: &quot;CT019&quot; Retirada de campos obrigatorios do payload                                                                          &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:303&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;item_count&quot;:888,&quot;item_id&quot;:297,&quot;deposit_id&quot;:304}
+Body apos a remoÃ§Ã£o do campo: {&quot;item_count&quot;:888,&quot;deposit_id&quot;:304}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postInventoriesCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;item_id&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mendpointInventories&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                               &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComo(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao POST pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                            &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPOSTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;item&quot;:[&quot;must exist&quot;],&quot;item_id&quot;:[&quot;can&apos;t be blank&quot;]}
+code Rest assured: 422
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                                  &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 422; expected:&lt;4[00]&gt; but was:&lt;4[22]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mque venha um erro &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;erro&quot;&amp;#27;[0m&amp;#27;[36m no response body&amp;#27;[0m                                                                                               &amp;#27;[90m# stepDefinitions.APIStepDefinition.queVenhaUmErroNoResponseBody(java.lang.String)&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT020&quot; Retirada de campos obrigatorios do payload" time="2.505">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 422; expected:&lt;4[00]&gt; but was:&lt;4[22]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 422; expected:&lt;4[00]&gt; but was:&lt;4[22]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @PostComRetiradaDeCampos
+Scenario Outline: &quot;CT020&quot; Retirada de campos obrigatorios do payload                                                                             &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:304&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;item_count&quot;:888,&quot;item_id&quot;:298,&quot;deposit_id&quot;:305}
+Body apos a remoÃ§Ã£o do campo: {&quot;item_count&quot;:888,&quot;item_id&quot;:298}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postInventoriesCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;deposit_id&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mendpointInventories&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                  &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComo(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao POST pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                               &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPOSTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;deposit&quot;:[&quot;must exist&quot;],&quot;deposit_id&quot;:[&quot;can&apos;t be blank&quot;]}
+code Rest assured: 422
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                                     &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 422; expected:&lt;4[00]&gt; but was:&lt;4[22]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mque venha um erro &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;erro&quot;&amp;#27;[0m&amp;#27;[36m no response body&amp;#27;[0m                                                                                                  &amp;#27;[90m# stepDefinitions.APIStepDefinition.queVenhaUmErroNoResponseBody(java.lang.String)&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT021&quot; Retirada de campos obrigatorios do payload" time="2.446">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @PostComRetiradaDeCampos
+Scenario Outline: &quot;CT021&quot; Retirada de campos obrigatorios do payload                                                                             &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:305&amp;#27;[0m
+body antes da remoÃ§Ã£o: {&quot;item_count&quot;:888,&quot;item_id&quot;:299,&quot;deposit_id&quot;:306}
+Body apos a remoÃ§Ã£o do campo: {&quot;item_id&quot;:299,&quot;deposit_id&quot;:306}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postInventoriesCompleto&quot;&amp;#27;[0m&amp;#27;[32m, aleatorizando os campos ja colocados &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;RandomNum&quot;&amp;#27;[0m&amp;#27;[32m e retirando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;item_count&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadAleatorizandoOsCamposJaColocadosERetirandoOCampo(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mendpointInventories&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                  &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComo(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao POST pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                                               &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPOSTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;id&quot;:92,&quot;item_id&quot;:299,&quot;deposit_id&quot;:306,&quot;item_count&quot;:null,&quot;created_at&quot;:&quot;2023-02-02T15:19:50.583Z&quot;,&quot;updated_at&quot;:&quot;2023-02-02T15:19:50.583Z&quot;,&quot;url&quot;:&quot;https://test-bees.herokuapp.com/inventories/92.json&quot;}
+code Rest assured: 201
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                                                     &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 201; expected:&lt;[400]&gt; but was:&lt;[201]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:290)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mque venha um erro &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;erro&quot;&amp;#27;[0m&amp;#27;[36m no response body&amp;#27;[0m                                                                                                  &amp;#27;[90m# stepDefinitions.APIStepDefinition.queVenhaUmErroNoResponseBody(java.lang.String)&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT022&quot; Criacao de registros com tipagem incorreta de campos" time="0.804">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 422; expected:&lt;4[00]&gt; but was:&lt;4[22]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 422; expected:&lt;4[00]&gt; but was:&lt;4[22]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:313)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @PostComTipagemIncorreta
+Scenario Outline: &quot;CT022&quot; Criacao de registros com tipagem incorreta de campos                                    &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:317&amp;#27;[0m
+payload: {&quot;item_count&quot;:888,&quot;item_id&quot;:&quot;teste&quot;}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postInventoriesCompleto&quot;&amp;#27;[0m&amp;#27;[32m, modificando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;item_id&quot;&amp;#27;[0m&amp;#27;[32m para o valor &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;teste&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadModificandoOCampoParaOValor(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mendpointInventories&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                   &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComo(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao POST pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPOSTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;item&quot;:[&quot;must exist&quot;],&quot;deposit&quot;:[&quot;must exist&quot;],&quot;deposit_id&quot;:[&quot;can&apos;t be blank&quot;]}
+code Rest assured: 422
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                      &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 422; expected:&lt;4[00]&gt; but was:&lt;4[22]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:313)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mque venha um erro &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;erro&quot;&amp;#27;[0m&amp;#27;[36m no response body&amp;#27;[0m                                                                   &amp;#27;[90m# stepDefinitions.APIStepDefinition.queVenhaUmErroNoResponseBody(java.lang.String)&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT023&quot; Criacao de registros com tipagem incorreta de campos" time="0.828">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 422; expected:&lt;4[00]&gt; but was:&lt;4[22]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 422; expected:&lt;4[00]&gt; but was:&lt;4[22]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:313)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @PostComTipagemIncorreta
+Scenario Outline: &quot;CT023&quot; Criacao de registros com tipagem incorreta de campos                                       &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:318&amp;#27;[0m
+payload: {&quot;item_count&quot;:888,&quot;deposit_id&quot;:&quot;teste&quot;}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postInventoriesCompleto&quot;&amp;#27;[0m&amp;#27;[32m, modificando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;deposit_id&quot;&amp;#27;[0m&amp;#27;[32m para o valor &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;teste&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadModificandoOCampoParaOValor(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mendpointInventories&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                      &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComo(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao POST pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                   &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPOSTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;item&quot;:[&quot;must exist&quot;],&quot;deposit&quot;:[&quot;must exist&quot;],&quot;item_id&quot;:[&quot;can&apos;t be blank&quot;]}
+code Rest assured: 422
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                         &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 422; expected:&lt;4[00]&gt; but was:&lt;4[22]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:313)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mque venha um erro &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;erro&quot;&amp;#27;[0m&amp;#27;[36m no response body&amp;#27;[0m                                                                      &amp;#27;[90m# stepDefinitions.APIStepDefinition.queVenhaUmErroNoResponseBody(java.lang.String)&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT024&quot; Criacao de registros com tipagem incorreta de campos" time="0.851">
+    <failure message="O Response code foi diferente do esperado!, esperado: 400; recebido da API: 422; expected:&lt;4[00]&gt; but was:&lt;4[22]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 422; expected:&lt;4[00]&gt; but was:&lt;4[22]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:313)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @PostComTipagemIncorreta
+Scenario Outline: &quot;CT024&quot; Criacao de registros com tipagem incorreta de campos                                       &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:319&amp;#27;[0m
+payload: {&quot;item_count&quot;:&quot;teste&quot;}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o payload &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;postInventoriesCompleto&quot;&amp;#27;[0m&amp;#27;[32m, modificando o campo &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;item_count&quot;&amp;#27;[0m&amp;#27;[32m para o valor &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;teste&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOPayloadModificandoOCampoParaOValor(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mendpointInventories&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                      &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComo(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao POST pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m                   &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoPOSTPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+{&quot;item&quot;:[&quot;must exist&quot;],&quot;deposit&quot;:[&quot;must exist&quot;],&quot;item_id&quot;:[&quot;can&apos;t be blank&quot;],&quot;deposit_id&quot;:[&quot;can&apos;t be blank&quot;]}
+code Rest assured: 422
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m400&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                                         &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 400; recebido da API: 422; expected:&lt;4[00]&gt; but was:&lt;4[22]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;400&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:313)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mque venha um erro &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;erro&quot;&amp;#27;[0m&amp;#27;[36m no response body&amp;#27;[0m                                                                      &amp;#27;[90m# stepDefinitions.APIStepDefinition.queVenhaUmErroNoResponseBody(java.lang.String)&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT017&quot; Exclusao de registro especifico que esteja criado - HTTP 200 esperado" time="1.678">
+    <failure message="O Response code foi diferente do esperado!, esperado: 200; recebido da API: 204; expected:&lt;20[0]&gt; but was:&lt;20[4]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 200; recebido da API: 204; expected:&lt;20[0]&gt; but was:&lt;20[4]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;200&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:328)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @ExclusaoComIdValido
+Scenario Outline: &quot;CT017&quot; Exclusao de registro especifico que esteja criado - HTTP 200 esperado      &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:331&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque eu tenha um registro &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;deposito&quot;&amp;#27;[0m&amp;#27;[32m criado&amp;#27;[0m                                                   &amp;#27;[90m# stepDefinitions.APIStepDefinition.queEuTenhaUmRegistroCriado(java.lang.String)&amp;#27;[0m
+endpoint: https://test-bees.herokuapp.com/deposits/307
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;endpointDeposits&quot;&amp;#27;[0m&amp;#27;[32m com parametro de id valido&amp;#27;[0m              &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComoComParametroDeIdValido(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao DELETE pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoDELETEPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+
+code Rest assured: 204
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m200&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                         &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 200; recebido da API: 204; expected:&lt;20[0]&gt; but was:&lt;20[4]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;200&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:328)
+&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT037&quot; Exclusao de registro especifico que esteja criado - HTTP 200 esperado" time="3.446">
+    <failure message="O Response code foi diferente do esperado!, esperado: 200; recebido da API: 204; expected:&lt;20[0]&gt; but was:&lt;20[4]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 200; recebido da API: 204; expected:&lt;20[0]&gt; but was:&lt;20[4]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;200&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:328)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @ExclusaoComIdValido
+Scenario Outline: &quot;CT037&quot; Exclusao de registro especifico que esteja criado - HTTP 200 esperado      &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:332&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque eu tenha um registro &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;inventario&quot;&amp;#27;[0m&amp;#27;[32m criado&amp;#27;[0m                                                 &amp;#27;[90m# stepDefinitions.APIStepDefinition.queEuTenhaUmRegistroCriado(java.lang.String)&amp;#27;[0m
+endpoint: https://test-bees.herokuapp.com/inventories/93
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;endpointInventories&quot;&amp;#27;[0m&amp;#27;[32m com parametro de id valido&amp;#27;[0m           &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComoComParametroDeIdValido(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao DELETE pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoDELETEPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+
+code Rest assured: 204
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m200&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                         &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 200; recebido da API: 204; expected:&lt;20[0]&gt; but was:&lt;20[4]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;200&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:328)
+&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT057&quot; Exclusao de registro especifico que esteja criado - HTTP 200 esperado" time="1.6">
+    <failure message="O Response code foi diferente do esperado!, esperado: 200; recebido da API: 204; expected:&lt;20[0]&gt; but was:&lt;20[4]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 200; recebido da API: 204; expected:&lt;20[0]&gt; but was:&lt;20[4]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at ✽.espero receber um response code &quot;200&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:328)
+</failure>
+    <system-out>
+@TesteApis @TesteCompleto @ExclusaoComIdValido
+Scenario Outline: &quot;CT057&quot; Exclusao de registro especifico que esteja criado - HTTP 200 esperado      &amp;#27;[90m# src/test/resources/features/APIsAmbev.feature:333&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque eu tenha um registro &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;items&quot;&amp;#27;[0m&amp;#27;[32m criado&amp;#27;[0m                                                      &amp;#27;[90m# stepDefinitions.APIStepDefinition.queEuTenhaUmRegistroCriado(java.lang.String)&amp;#27;[0m
+endpoint: https://test-bees.herokuapp.com/items/301
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque seja definido o endpoint como &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;endpointItems&quot;&amp;#27;[0m&amp;#27;[32m com parametro de id valido&amp;#27;[0m                 &amp;#27;[90m# stepDefinitions.APIStepDefinition.queSejaDefinidoOEndpointComoComParametroDeIdValido(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mexecutar uma requisicao DELETE pelo rest-assured com tempo maximo de &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;5&quot;&amp;#27;[0m&amp;#27;[32m segundos de resposta&amp;#27;[0m &amp;#27;[90m# stepDefinitions.APIStepDefinition.executarUmaRequisicaoDELETEPeloRestAssuredComTempoMaximoDeSegundosDeResposta(java.lang.String)&amp;#27;[0m
+
+code Rest assured: 204
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero receber um response code &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m200&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m                                                         &amp;#27;[90m# stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: O Response code foi diferente do esperado!, esperado: 200; recebido da API: 204; expected:&lt;20[0]&gt; but was:&lt;20[4]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at api.ApiUtils.validaResponseCode(ApiUtils.java:446)
+	at stepDefinitions.APIStepDefinition.esperoReceberUmResponseCode(APIStepDefinition.java:99)
+	at âœ½.espero receber um response code &quot;200&quot;(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/APIsAmbev.feature:328)
+&amp;#27;[0m
+Nenhum driver aberto!
+</system-out>
+  </testcase>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT017&quot; Exclusao de registro especifico que nao esteja criado - HTTP 404 esperado" time="0.811"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT037&quot; Exclusao de registro especifico que nao esteja criado - HTTP 404 esperado" time="0.858"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT057&quot; Exclusao de registro especifico que nao esteja criado - HTTP 404 esperado" time="0.805"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT058&quot; Criacao de registros de inventario com dados incorretos de campos" time="0.803"/>
+  <testcase classname="Testes das APIs /Deposits | /Items | /Inventories" name="&quot;CT059&quot; Criacao de registros de inventario com dados incorretos de campos" time="0.821"/>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Criacao de usuario com dados corretos" time="9.507"/>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Criacao de usuario sem email" time="15.818"/>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Criacao de usuario sem senha" time="25.856"/>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Criacao de usuario sem formatacao de email" time="15.89"/>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Criacao de usuario com senha menor de 6 caracteres" time="15.02"/>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Login sem informar email" time="15.771"/>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Login sem informar senha" time="15.53"/>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Login com email sem formatacao" time="16.028"/>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Login com senha invalida" time="16.029"/>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Criacao de novo deposito com todos os campos preenchidos" time="9.212"/>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Criacao de novo deposito com nenhum dos campos preenchidos" time="8.569">
+    <failure message="O sistema permitiu a criação do deposito sem nenhum campo preenchido!!" type="java.lang.AssertionError">java.lang.AssertionError: O sistema permitiu a criação do deposito sem nenhum campo preenchido!!
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at stepDefinitions.WebStepDefinition.esperoQueNaoCrieODeposito(WebStepDefinition.java:181)
+	at ✽.espero que nao crie o deposito(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/TesteWeb.feature:79)
+</failure>
+    <system-out>
+@TesteWeb @TesteCompleto @CT012Web
+Scenario: Criacao de novo deposito com nenhum dos campos preenchidos &amp;#27;[90m# src/test/resources/features/TesteWeb.feature:76&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque esteja logado no sistema&amp;#27;[0m                                 &amp;#27;[90m# stepDefinitions.WebStepDefinition.queEstejaLogadoNoSistema()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mcriar um novo deposito sem nenhum campo&amp;#27;[0m                       &amp;#27;[90m# stepDefinitions.WebStepDefinition.criarUmNovoDepositoSemNenhumCampo()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero que nao crie o deposito&amp;#27;[0m                                &amp;#27;[90m# stepDefinitions.WebStepDefinition.esperoQueNaoCrieODeposito()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.AssertionError: O sistema permitiu a criaÃ§Ã£o do deposito sem nenhum campo preenchido!!
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at stepDefinitions.WebStepDefinition.esperoQueNaoCrieODeposito(WebStepDefinition.java:181)
+	at âœ½.espero que nao crie o deposito(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/TesteWeb.feature:79)
+&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 14116
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+</system-err>
+  </testcase>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Edicao de deposito ja criado com todos os campos" time="9.803"/>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Edicao de deposito ja criado com retirada de todos os campos" time="9.778">
+    <failure message="O sistema permitiu atualizar o deposito com todos os campos retirados" type="java.lang.AssertionError">java.lang.AssertionError: O sistema permitiu atualizar o deposito com todos os campos retirados
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at stepDefinitions.WebStepDefinition.esperoQueNaoAtualizeODeposito(WebStepDefinition.java:223)
+	at ✽.espero que nao atualize o deposito(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/TesteWeb.feature:92)
+</failure>
+    <system-out>
+@TesteWeb @TesteCompleto @CT014Web
+Scenario: Edicao de deposito ja criado com retirada de todos os campos &amp;#27;[90m# src/test/resources/features/TesteWeb.feature:89&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque esteja logado no sistema&amp;#27;[0m                                   &amp;#27;[90m# stepDefinitions.WebStepDefinition.queEstejaLogadoNoSistema()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32meditar um deposito com todos os campos retirados&amp;#27;[0m                &amp;#27;[90m# stepDefinitions.WebStepDefinition.editarUmDepositoComTodosOsCamposRetirados()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero que nao atualize o deposito&amp;#27;[0m                              &amp;#27;[90m# stepDefinitions.WebStepDefinition.esperoQueNaoAtualizeODeposito()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.AssertionError: O sistema permitiu atualizar o deposito com todos os campos retirados
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at stepDefinitions.WebStepDefinition.esperoQueNaoAtualizeODeposito(WebStepDefinition.java:223)
+	at âœ½.espero que nao atualize o deposito(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/TesteWeb.feature:92)
+&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 43680
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+</system-err>
+  </testcase>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Exclusao de deposito" time="9.709"/>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Criacao de novo item com todos os campos preenchidos" time="8.374"/>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Criacao de novo item com nenhum dos campos preenchidos" time="7.551">
+    <failure message="O sistema permitiu a criação do item sem nenhum campo preenchido!!" type="java.lang.AssertionError">java.lang.AssertionError: O sistema permitiu a criação do item sem nenhum campo preenchido!!
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at stepDefinitions.WebStepDefinition.esperoQueNaoCrieOitem(WebStepDefinition.java:272)
+	at ✽.espero que nao crie o item(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/TesteWeb.feature:111)
+</failure>
+    <system-out>
+@TesteWeb @TesteCompleto @CT017Web
+Scenario: Criacao de novo item com nenhum dos campos preenchidos &amp;#27;[90m# src/test/resources/features/TesteWeb.feature:108&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque esteja logado no sistema&amp;#27;[0m                             &amp;#27;[90m# stepDefinitions.WebStepDefinition.queEstejaLogadoNoSistema()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mcriar um novo item sem nenhum campo&amp;#27;[0m                       &amp;#27;[90m# stepDefinitions.WebStepDefinition.criarUmNovoitemSemNenhumCampo()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero que nao crie o item&amp;#27;[0m                                &amp;#27;[90m# stepDefinitions.WebStepDefinition.esperoQueNaoCrieOitem()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.AssertionError: O sistema permitiu a criaÃ§Ã£o do item sem nenhum campo preenchido!!
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at stepDefinitions.WebStepDefinition.esperoQueNaoCrieOitem(WebStepDefinition.java:272)
+	at âœ½.espero que nao crie o item(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/TesteWeb.feature:111)
+&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 7444
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+</system-err>
+  </testcase>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Edicao de item ja criado com todos os campos" time="9.697"/>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Edicao de item ja criado com retirada de todos os campos" time="9.441">
+    <failure message="O sistema permitiu atualizar o item com todos os campos retirados" type="java.lang.AssertionError">java.lang.AssertionError: O sistema permitiu atualizar o item com todos os campos retirados
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at stepDefinitions.WebStepDefinition.esperoQueNaoAtualizeOitem(WebStepDefinition.java:312)
+	at ✽.espero que nao atualize o item(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/TesteWeb.feature:124)
+</failure>
+    <system-out>
+@TesteWeb @TesteCompleto @CT019Web
+Scenario: Edicao de item ja criado com retirada de todos os campos &amp;#27;[90m# src/test/resources/features/TesteWeb.feature:121&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mque esteja logado no sistema&amp;#27;[0m                               &amp;#27;[90m# stepDefinitions.WebStepDefinition.queEstejaLogadoNoSistema()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32meditar um item com todos os campos retirados&amp;#27;[0m                &amp;#27;[90m# stepDefinitions.WebStepDefinition.editarUmitemComTodosOsCamposRetirados()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mespero que nao atualize o item&amp;#27;[0m                              &amp;#27;[90m# stepDefinitions.WebStepDefinition.esperoQueNaoAtualizeOitem()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.AssertionError: O sistema permitiu atualizar o item com todos os campos retirados
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at stepDefinitions.WebStepDefinition.esperoQueNaoAtualizeOitem(WebStepDefinition.java:312)
+	at âœ½.espero que nao atualize o item(file:///C:/Users/Microsoft/Desktop/WorkspaceDesafio/AmbevDesafio/src/test/resources/features/TesteWeb.feature:124)
+&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 41898
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+</system-err>
+  </testcase>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Exclusao de item" time="9.055"/>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Criacao de novo inventario com todos os campos preenchidos" time="11.086"/>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Criacao de novo inventario com nenhum dos campos preenchidos" time="27.637"/>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Edicao de inventario ja criado com todos os campos" time="11.396"/>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Edicao de inventario ja criado com retirada de todos os campos" time="29.278"/>
+  <testcase classname="Testes do sistema web de controle de estoque" name="Exclusao de inventario" time="9.106"/>
+</testsuite>
