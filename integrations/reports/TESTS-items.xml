@@ -1,0 +1,65 @@
+<testsuite name="items.Tela de Item" tests="5" errors="0" failures="0" skipped="0" time="6.992375" timestamp="2023-02-08T11:14:22.510291" hostname="DESKTOP-904GIUD"><testcase classname="items.Tela de Item" name="Vizualizar lista de Item" status="passed" time="3.293409"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Vizualizar lista de Item
+    Given eu estou logado com um usuario ... passed in 2.693s
+    When estou na pagina de Item ... passed in 0.036s
+    Then devo visualizar a lista de Items ... passed in 0.564s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="items.Tela de Item" name="Vizualizar um Item individual" status="passed" time="0.273899"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Vizualizar um Item individual
+    When estou na pagina de Item ... passed in 0.032s
+    And eu clico no botao 'Show this item' ... passed in 0.035s
+    Then sou redirecionado para uma tela que exibe as informacoes do Item ... passed in 0.207s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="items.Tela de Item" name="Criar novo Item" status="passed" time="0.846754"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Criar novo Item
+    When estou na pagina de Item ... passed in 0.029s
+    And eu clico no botao 'New Item' ... passed in 0.100s
+    And preencho o formulario com as informacoes necessarias ... passed in 0.347s
+    And eu clico no botao 'Create Item' ... passed in 0.037s
+    Then sou redirecionado para uma tela que exibe as informacoes do Item ... passed in 0.333s
+    And exibe a mensagem indicando 'Sucesso ao criar Item' ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="items.Tela de Item" name="Editar um Item existente" status="passed" time="1.426681"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Editar um Item existente
+    When estou na pagina de Item ... passed in 0.029s
+    And eu clico no botao 'Show this item' ... passed in 0.577s
+    And eu clico no botao 'Edit this Item' ... passed in 0.222s
+    And edito os campos do formulario ... passed in 0.234s
+    And eu clico no botao 'Update Item' ... passed in 0.034s
+    Then sou redirecionado para uma tela que exibe as informacoes do Item ... passed in 0.330s
+    And exibe a mensagem indicando 'Sucesso ao editar Item' ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="items.Tela de Item" name="Deletar inventorio existente" status="passed" time="1.151633"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Deletar inventorio existente
+    When estou na pagina de Item ... passed in 0.030s
+    And eu clico no botao 'Show this item' ... passed in 0.308s
+    And eu clico no botao 'Destroy this Item' ... passed in 0.219s
+    Then devo visualizar a lista de Items ... passed in 0.594s
+    And exibe a mensagem indicando 'Sucesso ao deletar Item' ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

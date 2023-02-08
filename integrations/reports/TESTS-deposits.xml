@@ -1,0 +1,88 @@
+<testsuite name="deposits.Tela de Depositos" tests="5" errors="1" failures="0" skipped="0" time="32.336243" timestamp="2023-02-08T11:13:50.609661" hostname="DESKTOP-904GIUD"><testcase classname="deposits.Tela de Depositos" name="Vizualizar lista de depositos" status="passed" time="4.676882"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Vizualizar lista de depositos
+    Given estou logado com um usuario ... passed in 2.744s
+    When estou na pagina de depositos ... passed in 0.036s
+    Then devo visualizar a lista de depositos ... passed in 1.897s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="deposits.Tela de Depositos" name="Vizualizar um deposito individual" status="passed" time="6.852882"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Vizualizar um deposito individual
+    When estou na pagina de depositos ... passed in 6.609s
+    When eu clico no botao: 'Show this deposit' ... passed in 0.040s
+    Then sou redirecionado para uma tela que exibe as informacoes do deposito ... passed in 0.204s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="deposits.Tela de Depositos" name="Criar novo deposito" status="passed" time="1.024326"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Criar novo deposito
+    When estou na pagina de depositos ... passed in 0.156s
+    When eu clico no botao: 'New Deposit' ... passed in 0.019s
+    And preencho o formulario com as informacoes necessarias do deposito ... passed in 0.407s
+    And eu clico no botao: 'Create Deposit' ... passed in 0.054s
+    Then sou redirecionado para uma tela que exibe as informacoes do deposito ... passed in 0.387s
+    And e exibida uma mensagem: 'Sucesso ao criar deposito' ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="deposits.Tela de Depositos" name="Editar um deposito existente" status="passed" time="2.796279"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Editar um deposito existente
+    When estou na pagina de depositos ... passed in 0.031s
+    When eu clico no botao: 'Show this deposit' ... passed in 1.884s
+    And eu clico no botao: 'Edit this deposit' ... passed in 0.223s
+    And edito os campos do formulario do deposito ... passed in 0.232s
+    And eu clico no botao: 'Update Deposit' ... passed in 0.047s
+    Then sou redirecionado para uma tela que exibe as informacoes do deposito ... passed in 0.379s
+    And e exibida uma mensagem: 'Sucesso ao editar deposito' ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="deposits.Tela de Depositos" name="Deletar deposito existente" status="failed" time="16.985873"><error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div/div/table&quot;}&#10;  (Session info: chrome=110.0.5481.78)&#10;">
+<![CDATA[
+Failing step: Then devo visualizar a lista de depositos ... failed in 15.039s
+Location: features/deposits.feature:38
+Traceback (most recent call last):
+  File "c:\users\kinro\appdata\local\programs\python\python39\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\kinro\appdata\local\programs\python\python39\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\deposits_steps.py", line 40, in check_list_deposits
+    context.deposits_page_el.table_list_deposits_page_element().is_displayed()
+  File "G:\Teste Bees\integrations\elements\deposits_page_el.py", line 96, in table_list_deposits_page_element
+    table_list_deposits = self.driver.find_element(
+  File "c:\users\kinro\appdata\local\programs\python\python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "c:\users\kinro\appdata\local\programs\python\python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "c:\users\kinro\appdata\local\programs\python\python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div/div/table"}
+  (Session info: chrome=110.0.5481.78)
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Deletar deposito existente
+    When estou na pagina de depositos ... passed in 0.030s
+    When eu clico no botao: 'Show this deposit' ... passed in 1.865s
+    And eu clico no botao: 'Destroy this deposit' ... passed in 0.052s
+    Then devo visualizar a lista de depositos ... failed in 15.039s
+    And e exibida uma mensagem: 'Sucesso ao deletar Deposito' ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

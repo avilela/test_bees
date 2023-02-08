@@ -1,0 +1,71 @@
+<testsuite name="api_inventory.Validacao da API Inventories" tests="6" errors="0" failures="0" skipped="0" time="11.746865" timestamp="2023-02-08T11:13:10.406953" hostname="DESKTOP-904GIUD"><testcase classname="api_inventory.Validacao da API Inventories" name="Validar exibir lista de Inventories" status="passed" time="0.73084"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Validar exibir lista de Inventories
+    Given eu requira a lista de Inventories via API ... passed in 0.731s
+    Then o statusCode deve ser 200 e o body da API Inventories nao deve ser vazio ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="api_inventory.Validacao da API Inventories" name="Validar criacao de Inventories" status="passed" time="1.745633"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Validar criacao de Inventories
+    Given eu tenha um payload de Inventory valido ... passed in 1.160s
+    When eu realizo um POST utilizando o endereco da API de Inventories ... passed in 0.584s
+    Then o statusCode deve ser 201 e o retorno da API Inventories tera as informacoes do payload ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="api_inventory.Validacao da API Inventories" name="Validar exibir um Inventory via ID" status="passed" time="2.312836"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Validar exibir um Inventory via ID
+    Given eu tenha um payload de Inventory valido ... passed in 1.155s
+    When eu realizo um POST utilizando o endereco da API de Inventories ... passed in 0.578s
+    And eu requira um Inventory via ID ... passed in 0.579s
+    Then o statusCode deve ser 200 e o body da API Inventories nao deve ser vazio ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="api_inventory.Validacao da API Inventories" name="Validar atualizar um Inventory com PATCH" status="passed" time="2.32406"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Validar atualizar um Inventory com PATCH
+    Given eu tenha um payload de Inventory valido ... passed in 1.160s
+    When eu realizo um POST utilizando o endereco da API de Inventories ... passed in 0.583s
+    And eu realizo uma atualizacao no Inventory via API com PATCH ... passed in 0.579s
+    Then o statusCode deve ser 200 e o Inventory deve ter sido atualizado conforme payload ... passed in 0.002s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="api_inventory.Validacao da API Inventories" name="Validar atualizar um Inventory com PUT" status="passed" time="2.329925"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Validar atualizar um Inventory com PUT
+    Given eu tenha um payload de Inventory valido ... passed in 1.151s
+    When eu realizo um POST utilizando o endereco da API de Inventories ... passed in 0.594s
+    And eu realizo uma atualizacao no Inventory via API com PUT ... passed in 0.583s
+    Then o statusCode deve ser 200 e o Inventory deve ter sido atualizado conforme payload ... passed in 0.002s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="api_inventory.Validacao da API Inventories" name="Validar exclusao de Inventory" status="passed" time="2.303571"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Validar exclusao de Inventory
+    Given eu tenha um payload de Inventory valido ... passed in 1.149s
+    When eu realizo um POST utilizando o endereco da API de Inventories ... passed in 0.582s
+    Then o statusCode deve ser 201 e o retorno da API Inventories tera as informacoes do payload ... passed in 0.001s
+    When eu requira a exclusao de um Inventory ... passed in 0.571s
+    Then o statusCode da API Inventories deve ser 204 ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
