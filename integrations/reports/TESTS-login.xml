@@ -1,0 +1,171 @@
+<testsuite name="login.Tela de Login" tests="7" errors="4" failures="1" skipped="0" time="85.510422" timestamp="2023-02-08T11:15:51.363116" hostname="DESKTOP-904GIUD"><testcase classname="login.Tela de Login" name="Validacao de Recuperacao de Acesso -- @1.1 " status="failed" time="17.944991"><error type="TimeoutException" message="Message: &#10;">
+<![CDATA[
+Failing step: Then exibe uma mensagem indicando envio de mensagem para recuperacao de senha ... failed in 15.543s
+Location: features/login.feature:11
+Traceback (most recent call last):
+  File "c:\users\kinro\appdata\local\programs\python\python39\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\kinro\appdata\local\programs\python\python39\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\login_steps.py", line 85, in verify_msg
+    context.login_el.msg_forgot_password_successfully_element().text
+  File "G:\Teste Bees\integrations\elements\login_el.py", line 99, in msg_forgot_password_successfully_element
+    msg = WebDriverWait(self.driver, 10).until(
+  File "c:\users\kinro\appdata\local\programs\python\python39\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Validacao de Recuperacao de Acesso -- @1.1 
+    Given eu estou na pagina de login ... passed in 1.727s
+    When clico no botao 'Forgot your password?' ... passed in 0.147s
+    And preencho o campo com um e-mail valido associado a uma conta ... passed in 0.054s
+    And clico no botao 'Send me reset password instructions' ... passed in 0.475s
+    Then exibe uma mensagem indicando envio de mensagem para recuperacao de senha ... failed in 15.543s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="login.Tela de Login" name="Validacao de Recuperacao de Acesso -- @1.2 " status="failed" time="0.987003"><failure type="AssertionError" message="">
+<![CDATA[
+Failing step: Then exibe uma mensagem indicando email invalido ou nao cadastrado ... failed in 0.006s
+Location: features/login.feature:11
+Traceback (most recent call last):
+  File "c:\users\kinro\appdata\local\programs\python\python39\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\kinro\appdata\local\programs\python\python39\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\login_steps.py", line 96, in verify_msg
+    assert current_url == "https://test-bees.herokuapp.com/users/password/"
+AssertionError
+]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Validacao de Recuperacao de Acesso -- @1.2 
+    Given eu estou na pagina de login ... passed in 0.493s
+    When clico no botao 'Forgot your password?' ... passed in 0.046s
+    And preencho o campo com um e-mail invalido associado a uma conta ... passed in 0.060s
+    And clico no botao 'Send me reset password instructions' ... passed in 0.382s
+    Then exibe uma mensagem indicando email invalido ou nao cadastrado ... failed in 0.006s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="login.Tela de Login" name="Registro com Sucesso" status="passed" time="11.361035"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Registro com Sucesso
+    Given eu estou na pagina de login ... passed in 0.357s
+    When clico no botao 'Sign up Login' ... passed in 0.187s
+    And eu preencho o formulario de registro com 'dados validos' ... passed in 5.138s
+    And clico no botao 'Sign up Registro' ... passed in 0.037s
+    Then exibe uma mensagem indicando 'sucesso no cadastro' ... passed in 0.597s
+    And realizo logout ... passed in 5.046s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="login.Tela de Login" name="Validando Registro sem Sucesso -- @1.1 " status="failed" time="21.282197"><error type="TimeoutException" message="Message: &#10;">
+<![CDATA[
+Failing step: Then exibe uma mensagem indicando informacoes invalidas ... failed in 15.519s
+Location: features/login.feature:31
+Traceback (most recent call last):
+  File "c:\users\kinro\appdata\local\programs\python\python39\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\kinro\appdata\local\programs\python\python39\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\login_steps.py", line 109, in verify_msg
+    msg_exibida = context.login_el.field_for_undeveloped_feautes().text
+  File "G:\Teste Bees\integrations\elements\login_el.py", line 51, in field_for_undeveloped_feautes
+    field_undeveloped = WebDriverWait(self.driver, 10).until(
+  File "c:\users\kinro\appdata\local\programs\python\python39\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Validando Registro sem Sucesso -- @1.1 
+    Given eu estou na pagina de login ... passed in 0.476s
+    When clico no botao 'Sign up Login' ... passed in 0.128s
+    And eu preencho o formulario de registro com dados invalidos ... passed in 5.123s
+    And clico no botao 'Sign up Registro' ... passed in 0.036s
+    Then exibe uma mensagem indicando informacoes invalidas ... failed in 15.519s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="login.Tela de Login" name="Validando Registro sem Sucesso -- @1.2 " status="failed" time="21.244015"><error type="TimeoutException" message="Message: &#10;">
+<![CDATA[
+Failing step: Then exibe uma mensagem indicando email ja registrado ... failed in 15.508s
+Location: features/login.feature:31
+Traceback (most recent call last):
+  File "c:\users\kinro\appdata\local\programs\python\python39\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\kinro\appdata\local\programs\python\python39\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\login_steps.py", line 118, in verify_msg
+    msg_exibida = context.login_el.field_for_undeveloped_feautes().text
+  File "G:\Teste Bees\integrations\elements\login_el.py", line 51, in field_for_undeveloped_feautes
+    field_undeveloped = WebDriverWait(self.driver, 10).until(
+  File "c:\users\kinro\appdata\local\programs\python\python39\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Validando Registro sem Sucesso -- @1.2 
+    Given eu estou na pagina de login ... passed in 0.508s
+    When clico no botao 'Sign up Login' ... passed in 0.035s
+    And eu preencho o formulario de registro com email cadastrado ... passed in 5.143s
+    And clico no botao 'Sign up Registro' ... passed in 0.050s
+    Then exibe uma mensagem indicando email ja registrado ... failed in 15.508s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="login.Tela de Login" name="Validacao do Login com credenciais invalidas" status="failed" time="6.303761"><error type="AttributeError" message="'HomePageElements' object has no attribute 'field_for_undeveloped_feautes'">
+<![CDATA[
+Failing step: Then exibe uma mensagem indicando 'insucesso' ... failed in 0.004s
+Location: features/login.feature:42
+Traceback (most recent call last):
+  File "c:\users\kinro\appdata\local\programs\python\python39\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\kinro\appdata\local\programs\python\python39\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\login_steps.py", line 69, in verify_msg
+    context.home_page_el.field_for_undeveloped_feautes().text
+AttributeError: 'HomePageElements' object has no attribute 'field_for_undeveloped_feautes'
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Validacao do Login com credenciais invalidas
+    Given eu estou na pagina de login ... passed in 0.505s
+    When preencho os campos com credenciais 'invalidas' ... passed in 0.081s
+    And clico no botao 'Submit' ... passed in 5.714s
+    Then exibe uma mensagem indicando 'insucesso' ... failed in 0.004s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="login.Tela de Login" name="Validacao do Login com credenciais validas" status="passed" time="6.387419"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Validacao do Login com credenciais validas
+    Given eu estou na pagina de login ... passed in 0.490s
+    When preencho os campos com credenciais 'validas' ... passed in 0.088s
+    And clico no botao 'Submit' ... passed in 5.787s
+    Then exibe uma mensagem indicando 'sucesso' ... passed in 0.022s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

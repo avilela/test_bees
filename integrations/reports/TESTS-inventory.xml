@@ -1,0 +1,66 @@
+<testsuite name="inventory.Tela de Inventario" tests="5" errors="0" failures="0" skipped="0" time="18.290412" timestamp="2023-02-08T11:14:12.218042" hostname="DESKTOP-904GIUD"><testcase classname="inventory.Tela de Inventario" name="Vizualizar lista de inventario" status="passed" time="2.617487"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Vizualizar lista de inventario
+    Given eu estou logado ... passed in 2.562s
+    When estou na pagina de inventario ... passed in 0.035s
+    Then devo visualizar a lista de inventario ... passed in 0.020s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="inventory.Tela de Inventario" name="Vizualizar um inventario individual" status="passed" time="1.517918"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Vizualizar um inventario individual
+    When estou na pagina de inventario ... passed in 0.022s
+    And clico no botao: 'Show this inventory' ... passed in 1.293s
+    Then sou redirecionado para uma tela que exibe as informacoes do inventario ... passed in 0.203s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="inventory.Tela de Inventario" name="Criar novo inventario" status="passed" time="9.511106"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Criar novo inventario
+    When eu tenha um item e um deposito cadastrado ... passed in 1.179s
+    And estou na pagina de inventario ... passed in 0.045s
+    And clico no botao: 'New inventory' ... passed in 1.099s
+    And eu preencho o formulario com as informacoes necessarias ... passed in 6.813s
+    And clico no botao: 'Create inventory' ... passed in 0.037s
+    Then sou redirecionado para uma tela que exibe as informacoes do inventario ... passed in 0.338s
+    And exibe uma mensagem: 'Sucesso ao criar inventario' ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="inventory.Tela de Inventario" name="Editar um inventario existente" status="passed" time="2.21088"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Editar um inventario existente
+    When estou na pagina de inventario ... passed in 0.036s
+    And clico no botao: 'Show this inventory' ... passed in 1.135s
+    And clico no botao: 'Edit this inventory' ... passed in 0.234s
+    And edito os campos do formulario de inventario ... passed in 0.425s
+    And clico no botao: 'Update inventory' ... passed in 0.053s
+    Then sou redirecionado para uma tela que exibe as informacoes do inventario ... passed in 0.327s
+    And exibe uma mensagem: 'Sucesso ao editar inventario' ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="inventory.Tela de Inventario" name="Deletar inventorio existente" status="passed" time="2.433022"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Deletar inventorio existente
+    When estou na pagina de inventario ... passed in 0.036s
+    And clico no botao: 'Show this inventory' ... passed in 1.053s
+    And clico no botao: 'Destroy this inventory' ... passed in 0.099s
+    Then devo visualizar a lista de inventario ... passed in 1.245s
+    And exibe uma mensagem: 'Sucesso ao deletar inventario' ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

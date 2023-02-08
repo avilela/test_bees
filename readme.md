@@ -1,39 +1,46 @@
-# Test Manual/Automation QA - BEES SAAS
+# Testes Web e API automatizados usando Python, Requests, Behave e Selenium
 
-### Fork this repo and follow the instructions bellow for the test 
-<BR>
+### Requisitos técnicos para automação:
+- Teste a interface do usuário e a API
+- Use o padrão de objeto de página ou padrões relativos de sua preferência.
+- Use BDD para qualquer cenário que você queira fazer
+- Você pode escolher qualquer linguagem de programação, recomendamos que você use o Python 3.6+, MAS É COM VOCÊ
+- Por favor, siga o estilo de código para o seu idioma escolhido (exemplo: PEP's para python).
+- Descreva como executar seu código em README.MD
+- Gere um relatório dos resultados dos seus testes
 
-### Business Rules
+### Foi utilizado:
+- Python 3.9.4
+- Behave 1.2.6
+- Faker 12.3.3
+- Faker-food 0.1.0
+- Requests 2.26.0
+- Selenium 3.141.0
+- ChromeDriver
 
-<br>
+### Procedimento para rodar a automação
 
-We developed a application that will help us to manage our inventory, deposits and items. Feel free to register your account and start using our application.
-Take your time to play around on the application's UI and API to get familiar with the system.
+- Instalar os pacotes necessários através do arquivo requeriments.txt, por meio do comando: 	```
+ pip install -r requirements.txt	```
+- É necessário baixar o 	``` chromedriver ```, te-lo nas variáveis de ambiente e adicionar o caminho no arquivo ``` environment.py``` no método ```browser_chrome```
+- Para rodar toda a automação, utilize o comando ```behave``` estando dentro do diretório ```integrations```
 
-For this test you will have to create a test automation project or manual tests cases, try to test as
-many scenarios as possible.
+#### Rodando os cenários da API:
+| api_deposits.feautre  | api_inventory.feature| api_items.feature |
+| ------------- | ------------- | ------------- |
+|  ```behave .\features\api_deposits.feature```  |  ```behave .\features\api_inventory.feature``` |  ```behave .\features\api_items.feature```     |
 
+#### Rodando os cenários do Site:
+| deposits.feature  | inventory.feature| items.feature | login.feature |
+| ------------ | ------------ | ------------ | ------------- |
+|  ```behave .\features\deposits.feature     ```  |  ```behave .\features\inventory.feature``` |  ```behave .\features\items.feature```     |  ```behave .\features\login.feature```     |
 
-<br>
-Links:
+#### Rodando todos os cenários:
+Rodar o comando```behave```.
 
-* Applicattion link - https://test-bees.herokuapp.com
-* API Docs - https://test-bees.herokuapp.com/api-docs/index.html 
+### Como gerar relatório com o resultado dos testes
+- Para este projeto foi considerada utilização do comando ```--junit```. Ao adicioná-lo ao final do comando de rodar o behave, ele irá gerar um relatório .xml contendo o resultado dos testes. 
+- Exemplo de comando:  ```behave .\features\deposits.feature --junit  ``` 
 
-<BR>
-
-### Technical Requirements for Automation
-- Test both UI and API 
-- Use page object pattern or relative patterns of your preference.
-- Use BDD for any scenario you want to do
-- You can choose any programming language, we recommend to you use Python 3.6+,  *BUT IT'S UP TO YOU*
-- Please follow code style for your choose language (example: PEP's for python).
-- Describe how to run your code in README.MD
-- Please generate a report of your tests results
-
-### Technical Requirements for Manual
-- Test both UI and API
-- Documented all tests cases you created
-- For api tests you can use any framework you want, but we recommend to use Postman
-- Generate a report with evidences of the tests results
-  
+### Como gerar relatório com o resultado dos testes
+- Já foi gerado uma pasta com os relatórios em: ``` .\integrations\reports```. 
