@@ -1,14 +1,14 @@
 Feature: Tela de Item
     Como um usuario autenticado do site
-    Eu quero poder visualizar a lista de Items, um Item individual e 
-        acrescentar, editar ou excluir um Item
+    Eu quero poder visualizar a lista de Items, um Item individual e
+    acrescentar, editar ou excluir um Item
     Para controlar o estoque utilizando a aplicacao
 
     Scenario: Vizualizar lista de Item
         Given eu estou logado com um usuario
         When estou na pagina de Item
         Then devo visualizar a lista de Items
-        
+
 
     Scenario: Vizualizar um Item individual
         When estou na pagina de Item

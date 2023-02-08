@@ -1,11 +1,11 @@
 Feature: Tela de Inventario
     Como um usuario autenticado do site
-    Eu quero poder visualizar a lista de inventarios, um inventario individual e 
-        acrescentar, editar ou excluir um inventario
+    Eu quero poder visualizar a lista de inventarios, um inventario individual e
+    acrescentar, editar ou excluir um inventario
     Para controlar o estoque utilizando a aplicacao
 
     Scenario: Vizualizar lista de inventario
-        Given eu estou logado 
+        Given eu estou logado
         When estou na pagina de inventario
         Then devo visualizar a lista de inventario
 

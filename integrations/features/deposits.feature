@@ -37,4 +37,3 @@ Feature: Tela de Depositos
         And eu clico no botao: 'Destroy this deposit' 
         Then devo visualizar a lista de depositos
         And e exibida uma mensagem: 'Sucesso ao deletar Deposito'
-        # And realizo logout do site

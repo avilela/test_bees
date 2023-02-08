@@ -3,7 +3,6 @@ from elements.login_el import LoginElements
 from elements.home_page_el import HomePageElements
 from time import sleep
 from faker import Faker
-from selenium.webdriver import Chrome
 import random
 
 fake = Faker()

@@ -4,7 +4,6 @@ from elements.home_page_el import HomePageElements
 from elements.deposits_page_el import DepositsPageElements
 from faker import Faker
 from random import randrange
-from time import sleep
 
 
 fake = Faker()
