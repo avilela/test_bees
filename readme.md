@@ -26,7 +26,7 @@ Links:
 - Test both UI and API 
 - Use page object pattern or relative patterns of your preference.
 - Use BDD for any scenario you want to do
-- You can choose any programming language, we recommend to you use Python 3.6+,  *BUT IT'S UP TO YOU*
+- You can choose any programming language, we recommend to you use Python 3.10+,  *BUT IT'S UP TO YOU*
 - Please follow code style for your choose language (example: PEP's for python).
 - Describe how to run your code in README.MD
 - Please generate a report of your tests results
